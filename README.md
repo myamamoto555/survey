@@ -15,6 +15,14 @@
 [[url]](http://ieeexplore.ieee.org/document/7501601/)
 - Response Summarizer: An Automatic Summarization System of Call Center Conversation 
 [[slide]](http://www.slideshare.net/pfi/response-summarizer-an-automatic-summarization-system-of-call-center-conversation)
+- Customer voice sensor: A comprehensive opinion mining system for call center conversation
+[[url]](http://ieeexplore.ieee.org/abstract/document/7529578/)
+
+### 2015
+- Abstractive Meeting Summarization as a Markov Decision Process
+[[pdf]](http://www.ufv.ca/media/assets/computer-information-systems/gabriel-murray/publications/canadian-ai-2015-1.pdf)
+- Call Centre Conversation Summarization: A Pilot Task at Multiling 2015
+[[pdf]](http://www.sensei-conversation.eu/wp-content/uploads/2015/09/SIGDIAL33.pdf)
 
 ### 2013
 - Towards abstractive speech summarization: Exploring unsupervised and supervised ap- proaches for spoken utterance compression
@@ -28,10 +36,11 @@
 - Unsupervised Topic Modeling Approaches to Decision Summarization in Spoken Meetings 
 [[pdf]](https://www.cs.cornell.edu/home/cardie/papers/SIGDIAL13-Unsupervised.pdf)
 
-
 ### 2011
 - Summarizing Decisions in Spoken Meetings 
 [[pdf]](http://www.ccs.neu.edu/home/luwang/papers/ACL2011.pdf)
+- コールメモを利用したコールセンタ向け音声対話要約方式の提案
+[[pdf]](http://www.anlp.jp/proceedings/annual_meeting/2011/pdf_dir/B4-4.pdf)
 
 ### 2010
 - Long story short Global unsupervised models for keyphrase based meeting summarization
