@@ -7,12 +7,14 @@
   - speech summarization
   - dialogue summarization
 
-## Papers
+## Papers and Slides
 ### 2016
 - 発話間関係の構造化による会議録からの議論マップ自動生成システム 
 [[pdf]](http://db-event.jpn.org/deim2016/papers/288.pdf)
 - Summarizing Meeting Transcripts Based on Functional Segmentation 
 [[url]](http://ieeexplore.ieee.org/document/7501601/)
+- Response Summarizer: An Automatic Summarization System of Call Center Conversation 
+[[slide]](http://www.slideshare.net/pfi/response-summarizer-an-automatic-summarization-system-of-call-center-conversation)
 
 ### 
 
@@ -35,12 +37,19 @@
 
 ## Corpus
 ### AMI Meeting Corpus [[url]](http://groups.inf.ed.ac.uk/ami/corpus/)
+- 英語
 - Meetingを収録したcorpus
 - 無料で使用可能
 
 ### ICSI Meeting Corpus [[url]](http://www1.icsi.berkeley.edu/Speech/mr/)
+- 英語
 - Meetingを収録したcorpus
 - 有料(LDCでダウンロード)
+
+### Kyutech Corpus [[url]](http://www.pluto.ai.kyutech.ac.jp/~shimada/resources.html)
+- 日本語
+- Meetingを収録したcorpus
+- 無料
 
 # 対話要約に関する周辺技術
 - 対話要約に有用な技術をまとめる。
