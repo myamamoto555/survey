@@ -17,12 +17,16 @@
 [[slide]](http://www.slideshare.net/pfi/response-summarizer-an-automatic-summarization-system-of-call-center-conversation)
 - Customer voice sensor: A comprehensive opinion mining system for call center conversation
 [[url]](http://ieeexplore.ieee.org/abstract/document/7529578/)
+- Beyond utterance extraction: summary recombination for speech summarization
+[[pdf]](http://pageperso.lif.univ-mrs.fr/~benoit.favre/papers/favre_is2016a.pdf)
 
 ### 2015
 - Abstractive Meeting Summarization as a Markov Decision Process
 [[pdf]](http://www.ufv.ca/media/assets/computer-information-systems/gabriel-murray/publications/canadian-ai-2015-1.pdf)
 - Call Centre Conversation Summarization: A Pilot Task at Multiling 2015
 [[pdf]](http://www.sensei-conversation.eu/wp-content/uploads/2015/09/SIGDIAL33.pdf)
+- AUTOMATIC SUMMARIZATION OF CALL-CENTER CONVERSATIONS
+[[pdf]](http://sisl.disi.unitn.it/wp-content/uploads/2015/11/ASRU15-SpeechSummarizationDemo.pdf)
 
 ### 2013
 - Towards abstractive speech summarization: Exploring unsupervised and supervised ap- proaches for spoken utterance compression
@@ -49,6 +53,8 @@
 [[pdf]](http://www.cs.ucf.edu/~feiliu/papers/SLT_2010.pdf)
 - Improving supervised learning for meeting summarization using sampling and regression
 [[url]](http://www.sciencedirect.com/science/article/pii/S0885230809000394)
+- 重要文抽出に基づく講義音声の自動要約
+[[pdf]](https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwjjvfuX84nQAhWMnpQKHcasCxUQFggdMAA&url=https%3A%2F%2Fipsj.ixsq.nii.ac.jp%2Fej%2Findex.php%3Faction%3Dpages_view_main%26active_action%3Drepository_action_common_download%26item_id%3D68731%26item_no%3D1%26attribute_id%3D1%26file_no%3D1%26page_id%3D13%26block_id%3D8&usg=AFQjCNFfp-TdL3ivZdS4RTVMEn1086GFWg&sig2=ofRX_p4zr1o5PnqjwEh3Vg)
 
 ### 2009
 - Leveraging sentence weights in a concept-based opti- mization framework for extractive meeting summarization
@@ -63,10 +69,14 @@
 [[pdf]](http://www.ufv.ca/media/assets/computer-information-systems/gabriel-murray/publications/murray-thesis.pdf)
 - Extracting question/an- swer pairs in multi-party meetings
 [[pdf]](https://www.sri.com/sites/default/files/publications/extracting_question_answer_pairs_in_multi-party_meetings.pdf)
+- コールセンターにおける音声対話からの営業日報変換手法の提案
+[[pdf]](http://www.anlp.jp/proceedings/annual_meeting/2008/pdf_dir/PB2-2.pdf)
 
 ### 2006
 - A skip-chain conditional random field for ranking meeting utterances by importance
 [[pdf]](http://www.cs.columbia.edu/nlp/papers/2006/galley_06b.pdf)
+- コールセンターにおける対話 データを用いた営業日報の自動生成
+
 
 
 ## Corpus
