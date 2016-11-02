@@ -16,8 +16,11 @@
 - Response Summarizer: An Automatic Summarization System of Call Center Conversation 
 [[slide]](http://www.slideshare.net/pfi/response-summarizer-an-automatic-summarization-system-of-call-center-conversation)
 
-### 
-
+### 2013
+- Towards abstractive speech summarization: Exploring unsupervised and supervised ap- proaches for spoken utterance compression
+[[url]](http://ieeexplore.ieee.org/abstract/document/6488744/)
+- Abstractive meeting summarization with entailment and fusion
+[[pdf]](http://www.aclweb.org/anthology/W13-2117)
 
 ### 2012
 - Focused Meeting Summarization via Unsupervised Relation Extraction 
@@ -35,6 +38,8 @@
 [[url]](http://www.sciencedirect.com/science/article/pii/S0167639310001019)
 - Using spoken utterance compres- sion for meeting summarization
 [[pdf]](http://www.cs.ucf.edu/~feiliu/papers/SLT_2010.pdf)
+- Improving supervised learning for meeting summarization using sampling and regression
+[[url]](http://www.sciencedirect.com/science/article/pii/S0885230809000394)
 
 ### 2009
 - Leveraging sentence weights in a concept-based opti- mization framework for extractive meeting summarization
@@ -47,6 +52,12 @@
 ### 2008
 - Using Speech-Specific Characteristics for Automatic Speech Summarization
 [[pdf]](http://www.ufv.ca/media/assets/computer-information-systems/gabriel-murray/publications/murray-thesis.pdf)
+- Extracting question/an- swer pairs in multi-party meetings
+[[pdf]](https://www.sri.com/sites/default/files/publications/extracting_question_answer_pairs_in_multi-party_meetings.pdf)
+
+### 2006
+- A skip-chain conditional random field for ranking meeting utterances by importance
+[[pdf]](http://www.cs.columbia.edu/nlp/papers/2006/galley_06b.pdf)
 
 
 ## Corpus
