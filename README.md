@@ -31,7 +31,7 @@ http://www.ccs.neu.edu/home/luwang/papers/ACL2011.pdf
 
 ### 2008
 - Using Speech-Specific Characteristics for Automatic Speech Summarization
-[pdf](http://www.ufv.ca/media/assets/computer-information-systems/gabriel-murray/publications/murray-thesis.pdf)
+[[pdf]](http://www.ufv.ca/media/assets/computer-information-systems/gabriel-murray/publications/murray-thesis.pdf)
 
 ## Corpus
 ### AMI Meeting Corpus
