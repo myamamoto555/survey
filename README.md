@@ -30,10 +30,24 @@
 - Summarizing Decisions in Spoken Meetings 
 [[pdf]](http://www.ccs.neu.edu/home/luwang/papers/ACL2011.pdf)
 
+### 2010
+- Long story short Global unsupervised models for keyphrase based meeting summarization
+[[url]](http://www.sciencedirect.com/science/article/pii/S0167639310001019)
+- Using spoken utterance compres- sion for meeting summarization
+[[pdf]](http://www.cs.ucf.edu/~feiliu/papers/SLT_2010.pdf)
+
+### 2009
+- Leveraging sentence weights in a concept-based opti- mization framework for extractive meeting summarization
+[[pdf]](http://www.hlt.utdallas.edu/~shasha/papers/interspeech2009_xie.pdf)
+- A global optimization framework for meeting summarization
+[[pdf]](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.186.9577&rep=rep1&type=pdf)
+- ClusterRank: a graph based method for meeting summarization
+[[pdf]](http://www5.informatik.uni-erlangen.de/Forschung/Publikationen/2009/Garg09-CAG.pdf)
 
 ### 2008
 - Using Speech-Specific Characteristics for Automatic Speech Summarization
 [[pdf]](http://www.ufv.ca/media/assets/computer-information-systems/gabriel-murray/publications/murray-thesis.pdf)
+
 
 ## Corpus
 ### AMI Meeting Corpus [[url]](http://groups.inf.ed.ac.uk/ami/corpus/)
