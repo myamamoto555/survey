@@ -1,4 +1,4 @@
-# aaaDialogue Summarization
+# Dialogue Summarization
 - 対話要約周りのサーベイ
 - 書き起こしを対象にまとめる(一部例外あり)
 - keywords
