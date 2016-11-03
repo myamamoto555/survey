@@ -72,12 +72,18 @@
 - コールセンターにおける音声対話からの営業日報変換手法の提案
 [[pdf]](http://www.anlp.jp/proceedings/annual_meeting/2008/pdf_dir/PB2-2.pdf)
 
+### 2007
+- Detecting and summarizing action items in multi-party dialogue
+[[pdf]](http://www.eecs.qmul.ac.uk/~mpurver/papers/purver-et-al07sigdial.pdf)
+
 ### 2006
 - A skip-chain conditional random field for ranking meeting utterances by importance
 [[pdf]](http://www.cs.columbia.edu/nlp/papers/2006/galley_06b.pdf)
 - コールセンターにおける対話 データを用いた営業日報の自動生成
 
-
+### 2004
+- Automatic summarization of meeting data: A feasibility study
+[[pdf]](http://www.cs.ru.nl/~kraaijw/pubs/Keyword/papers/meeting_sum_tno.pdf)
 
 ## Corpus
 ### AMI Meeting Corpus [[url]](http://groups.inf.ed.ac.uk/ami/corpus/)
