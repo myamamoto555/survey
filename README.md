@@ -30,14 +30,18 @@
 - Abstractive summarization of spoken and written conversations based on phrasal queries
 [[pdf]](http://www.aclweb.org/anthology/P14-1115)
 
+### 2014
+- 非言語情報と重要文の選定に基つく複数人自由対話要約手法の改善
+[[pdf]](http://www.anlp.jp/proceedings/annual_meeting/2014/pdf_dir/P6-18.pdf)
+
 ### 2013
-- Towards abstractive speech summarization: Exploring unsupervised and supervised ap- proaches for spoken utterance compression
+- Towards abstractive speech summarization: Exploring unsupervised and supervised approaches for spoken utterance compression
 [[url]](http://ieeexplore.ieee.org/abstract/document/6488744/)
 - Abstractive meeting summarization with entailment and fusion
 [[pdf]](http://www.aclweb.org/anthology/W13-2117)
 - Domain-independent abstract generation for focused meeting summarization
 [[pdf]](https://www.cs.cornell.edu/home/cardie/papers/acl13-Domain.pdf)
-- Towards abstractive speech summarization: Exploring unsuper- vised and supervised approaches for spoken utterance compression
+- Towards abstractive speech summarization: Exploring unsupervised and supervised approaches for spoken utterance compression
 [[url]](http://ieeexplore.ieee.org/abstract/document/6488744/)
 
 ### 2012
@@ -67,6 +71,8 @@
 [[pdf]](https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwjjvfuX84nQAhWMnpQKHcasCxUQFggdMAA&url=https%3A%2F%2Fipsj.ixsq.nii.ac.jp%2Fej%2Findex.php%3Faction%3Dpages_view_main%26active_action%3Drepository_action_common_download%26item_id%3D68731%26item_no%3D1%26attribute_id%3D1%26file_no%3D1%26page_id%3D13%26block_id%3D8&usg=AFQjCNFfp-TdL3ivZdS4RTVMEn1086GFWg&sig2=ofRX_p4zr1o5PnqjwEh3Vg)
 - Generating and validating abstracts of meeting conversations: a user study
 [[pdf]](https://www.aclweb.org/anthology/W/W10/W10-4211.pdf)
+- 対話システムにおける対話履歴要約の有効性について
+[[pdf]](https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&cad=rja&uact=8&ved=0ahUKEwiMkK-1t47QAhVFVLwKHVFyBI4QFgg0MAQ&url=https%3A%2F%2Fipsj.ixsq.nii.ac.jp%2Fej%2F%3Faction%3Drepository_uri%26item_id%3D67600%26file_id%3D1%26file_no%3D1&usg=AFQjCNGQZ_czhOJvjjgrVzahkcwlpcQ-JQ&sig2=9DeNGvsDWJlXtsI_0f2v6w)
 
 ### 2009
 - Leveraging sentence weights in a concept-based opti- mization framework for extractive meeting summarization
