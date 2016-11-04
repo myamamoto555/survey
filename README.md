@@ -27,12 +27,18 @@
 [[pdf]](http://www.sensei-conversation.eu/wp-content/uploads/2015/09/SIGDIAL33.pdf)
 - AUTOMATIC SUMMARIZATION OF CALL-CENTER CONVERSATIONS
 [[pdf]](http://sisl.disi.unitn.it/wp-content/uploads/2015/11/ASRU15-SpeechSummarizationDemo.pdf)
+- Abstractive summarization of spoken and written conversations based on phrasal queries
+[[pdf]](http://www.aclweb.org/anthology/P14-1115)
 
 ### 2013
 - Towards abstractive speech summarization: Exploring unsupervised and supervised ap- proaches for spoken utterance compression
 [[url]](http://ieeexplore.ieee.org/abstract/document/6488744/)
 - Abstractive meeting summarization with entailment and fusion
 [[pdf]](http://www.aclweb.org/anthology/W13-2117)
+- Domain-independent abstract generation for focused meeting summarization
+[[pdf]](https://www.cs.cornell.edu/home/cardie/papers/acl13-Domain.pdf)
+- Towards abstractive speech summarization: Exploring unsuper- vised and supervised approaches for spoken utterance compression
+[[url]](http://ieeexplore.ieee.org/abstract/document/6488744/)
 
 ### 2012
 - Focused Meeting Summarization via Unsupervised Relation Extraction 
@@ -45,6 +51,10 @@
 [[pdf]](http://www.ccs.neu.edu/home/luwang/papers/ACL2011.pdf)
 - コールメモを利用したコールセンタ向け音声対話要約方式の提案
 [[pdf]](http://www.anlp.jp/proceedings/annual_meeting/2011/pdf_dir/B4-4.pdf)
+- Methods for Mining and Summarizing Text Conversations
+[[url]](http://www.morganclaypool.com/doi/abs/10.2200/S00363ED1V01Y201105DTM017)
+- The Impact of ASR on Abstractive vs. Extractive Meeting Summaries
+[[pdf]](http://www.cs.ubc.ca/~gabrielm/inter2010.pdf)
 
 ### 2010
 - Long story short Global unsupervised models for keyphrase based meeting summarization
@@ -55,6 +65,8 @@
 [[url]](http://www.sciencedirect.com/science/article/pii/S0885230809000394)
 - 重要文抽出に基づく講義音声の自動要約
 [[pdf]](https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwjjvfuX84nQAhWMnpQKHcasCxUQFggdMAA&url=https%3A%2F%2Fipsj.ixsq.nii.ac.jp%2Fej%2Findex.php%3Faction%3Dpages_view_main%26active_action%3Drepository_action_common_download%26item_id%3D68731%26item_no%3D1%26attribute_id%3D1%26file_no%3D1%26page_id%3D13%26block_id%3D8&usg=AFQjCNFfp-TdL3ivZdS4RTVMEn1086GFWg&sig2=ofRX_p4zr1o5PnqjwEh3Vg)
+- Generating and validating abstracts of meeting conversations: a user study
+[[pdf]](https://www.aclweb.org/anthology/W/W10/W10-4211.pdf)
 
 ### 2009
 - Leveraging sentence weights in a concept-based opti- mization framework for extractive meeting summarization
@@ -67,7 +79,7 @@
 ### 2008
 - Using Speech-Specific Characteristics for Automatic Speech Summarization
 [[pdf]](http://www.ufv.ca/media/assets/computer-information-systems/gabriel-murray/publications/murray-thesis.pdf)
-- Extracting question/an- swer pairs in multi-party meetings
+- Extracting question answer pairs in multi-party meetings
 [[pdf]](https://www.sri.com/sites/default/files/publications/extracting_question_answer_pairs_in_multi-party_meetings.pdf)
 - コールセンターにおける音声対話からの営業日報変換手法の提案
 [[pdf]](http://www.anlp.jp/proceedings/annual_meeting/2008/pdf_dir/PB2-2.pdf)
@@ -95,17 +107,3 @@
 - Meetingを収録したcorpus
 - 無料
 
-# 対話要約に関する周辺技術
-- 対話要約に有用な技術をまとめる。
-- 上記同様、書き起こしを対象とする。
-- keywords
-  - text segmentation
-  - discourse analysis
-
-## テキストセグメンテーション
-- 文書をまとまりのあるトピックに分割するタスク
-- 対話要約の前処理として有用であると考えられている
-
-### 2014
-- Modeling Topic Control to Detect Influence in Conversations using Nonparametric Topic Models 
-[[pdf]](http://www.umiacs.umd.edu/~jbg/docs/mlj_2013_influencer.pdf)
