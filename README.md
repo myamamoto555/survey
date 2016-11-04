@@ -63,7 +63,7 @@
 ### 2010
 - Long story short Global unsupervised models for keyphrase based meeting summarization
 [[url]](http://www.sciencedirect.com/science/article/pii/S0167639310001019)
-- Using spoken utterance compres- sion for meeting summarization
+- Using spoken utterance compression for meeting summarization
 [[pdf]](http://www.cs.ucf.edu/~feiliu/papers/SLT_2010.pdf)
 - Improving supervised learning for meeting summarization using sampling and regression
 [[url]](http://www.sciencedirect.com/science/article/pii/S0885230809000394)
@@ -75,7 +75,7 @@
 [[pdf]](https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&cad=rja&uact=8&ved=0ahUKEwiMkK-1t47QAhVFVLwKHVFyBI4QFgg0MAQ&url=https%3A%2F%2Fipsj.ixsq.nii.ac.jp%2Fej%2F%3Faction%3Drepository_uri%26item_id%3D67600%26file_id%3D1%26file_no%3D1&usg=AFQjCNGQZ_czhOJvjjgrVzahkcwlpcQ-JQ&sig2=9DeNGvsDWJlXtsI_0f2v6w)
 
 ### 2009
-- Leveraging sentence weights in a concept-based opti- mization framework for extractive meeting summarization
+- Leveraging sentence weights in a concept-based optimization framework for extractive meeting summarization
 [[pdf]](http://www.hlt.utdallas.edu/~shasha/papers/interspeech2009_xie.pdf)
 - A global optimization framework for meeting summarization
 [[pdf]](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.186.9577&rep=rep1&type=pdf)
