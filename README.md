@@ -34,6 +34,8 @@
 [[pdf]](http://delivery.acm.org/10.1145/2830000/2824173/p1879-bokaei.pdf?ip=131.113.101.130&id=2824173&acc=ACTIVE%20SERVICE&key=D2341B890AD12BFE.3544E7C56679C917.4D4702B0C3E38B35.4D4702B0C3E38B35&CFID=862390833&CFTOKEN=10199898&__acm__=1478516693_25259b80b468dea72120e96ed72c084a)
 - Extractive meeting summarization through speaker zone detection
 [[pdf]](http://libtreasures.utdallas.edu/xmlui/bitstream/handle/10735.1/5093/JECS-4983-4514.04.pdf?sequence=1)
+- Unsupervised approach to extract summary keywords in meeting domain
+[[pdf]](http://www.eurasip.org/Proceedings/Eusipco/Eusipco2015/papers/1570104351.pdf)
 
 ### 2014
 - 非言語情報と重要文の選定に基つく複数人自由対話要約手法の改善
@@ -112,10 +114,16 @@
 [[pdf]](http://www.hlt.utdallas.edu/~yangl/papers/SLT08_summarization.pdf)
 - Using corpus and knowledge-based similarity measure in maximum marginal relevance for meeting summarization
 [[pdf]](http://www.icsi.berkeley.edu/pubs/speech/usingcorpus08.pdf)
+- Term-weighting for summarization of multiparty spoken dialogues
+[[pdf]](http://www.cstr.ed.ac.uk/downloads/publications/2008/murray-mlmi07.pdf)
+- Correlation between rouge and human evaluation of extractive meeting summaries
+[[pdf]](http://www.aclweb.org/anthology/P08-2051)
 
 ### 2007
 - Detecting and summarizing action items in multi-party dialogue
 [[pdf]](http://www.eecs.qmul.ac.uk/~mpurver/papers/purver-et-al07sigdial.pdf)
+- Recognition and understanding of meetings the ami and amida project
+[[pdf]](http://www.cstr.ed.ac.uk/downloads/publications/2007/ami-asru2007.pdf)
 
 ### 2006
 - A skip-chain conditional random field for ranking meeting utterances by importance
@@ -146,12 +154,12 @@
 ### AMI Meeting Corpus [[url]](http://groups.inf.ed.ac.uk/ami/corpus/)
 - 英語
 - Meetingを収録したcorpus
-- 無料で使用可能
+- 無料
 
 ### ICSI Meeting Corpus [[url]](http://www1.icsi.berkeley.edu/Speech/mr/)
 - 英語
 - Meetingを収録したcorpus
-- 有料(LDCでダウンロード)
+- 有料
 
 ### Kyutech Corpus [[url]](http://www.pluto.ai.kyutech.ac.jp/~shimada/resources.html)
 - 日本語
