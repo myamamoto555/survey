@@ -33,12 +33,16 @@
 [[pdf]](http://delivery.acm.org/10.1145/1650000/1646170/p1553-misra.pdf?ip=131.113.101.130&id=1646170&acc=ACTIVE%20SERVICE&key=D2341B890AD12BFE.3544E7C56679C917.4D4702B0C3E38B35.4D4702B0C3E38B35&CFID=862390833&CFTOKEN=10199898&__acm__=1478582515_ed79d5da7471a9c9cd45837c83450521)
 
 ### 2008
+- Using Hidden Markov Models for Topic Segmentation of Meeting Transcripts  
+[[pdf]](https://pdfs.semanticscholar.org/ccb6/2ab55594259f4ee975d9f6d22c69034f2647.pdf)
 
 ### 2007
 
 ### 2006
 - Automatic segmentation of multiparty dialogue
 [[pdf]](http://www.cstr.inf.ed.ac.uk/downloads/publications/2006/21_1_hsuehmoorerenals.pdf)
+- Automatic Topic Segmentation and Labeling in Multiparty Dialogue
+[[pdf]](http://homepages.inf.ed.ac.uk/jmoore/papers/hsueh-slt2006-final.pdf)
 
 ### 2005
 
@@ -77,8 +81,17 @@
 - Meetingを収録したcorpus
 - 有料
 
-### Kyutech Corpus [[url]](http://www.pluto.ai.kyutech.ac.jp/~shimada/resources.html)
-- 日本語
-- Meetingを収録したcorpus
-- 無料
+## Evaluation metrics
+### P_k
+- Statistical Models for Text Segmentation
+[[pdf]](https://www.cs.cmu.edu/~aberger/pdf/ml.pdf)
 
+### WindowDiff (WD)
+-  A critique and improvement of an evaluation metric for text segmentation
+[[pdf]](http://people.ischool.berkeley.edu/~hearst/papers/pevzner-01.pdf)
+
+### Earth Mover's Distance (EMD)
+- A linear time histogram metric for improved sift matching
+[[pdf]](http://www.ariel.ac.il/sites/ofirpele/publications/ECCV2008.pdf)
+- Fast and robust earth mover’s distance
+[[pdf]](http://www.ariel.ac.il/sites/ofirpele/publications/ICCV2009.pdf)
