@@ -42,6 +42,8 @@
 [[pdf]](http://www.anlp.jp/proceedings/annual_meeting/2014/pdf_dir/P6-18.pdf)
 - A Template-based Abstractive Meeting Summarization: Leveraging Summary and Source Text Relationships
 [[pdf]](https://www.aclweb.org/anthology/W/W14/W14-4407.pdf)
+- 発話タイミングに注目した複数人自由対話要約手法の検討
+[[pdf]](http://www.pluto.ai.kyutech.ac.jp/~shimada/paper/gakuseikai2014D-38.pdf)
 
 ### 2013
 - Towards abstractive speech summarization: Exploring unsupervised and supervised approaches for spoken utterance compression
@@ -76,6 +78,8 @@
 [[url]](http://onlinelibrary.wiley.com/doi/10.1002/9781119992691.ch13/summary)
 - Spoken lecture summarization by random walk over a graph constructed with automatically extracted key terms
 [[pdf]](http://www.cs.cmu.edu/~yvchen/doc/IS11_Summar.pdf)
+- 共通状態と連結学習を用いたHMMによるコールセンタ対話の要約
+[[pdf]](http://www.kecl.ntt.co.jp/icl/lirg/members/rh/pdf/nlp2011.pdf)
 
 ### 2010
 - Long story short Global unsupervised models for keyphrase based meeting summarization
