@@ -36,6 +36,8 @@
 [[pdf]](http://libtreasures.utdallas.edu/xmlui/bitstream/handle/10735.1/5093/JECS-4983-4514.04.pdf?sequence=1)
 - Unsupervised approach to extract summary keywords in meeting domain
 [[pdf]](http://www.eurasip.org/Proceedings/Eusipco/Eusipco2015/papers/1570104351.pdf)
+- Opinion summarization on spontaneous conversations
+[[pdf]](http://fulltext.study/preview/pdf/559013.pdf)
 
 ### 2014
 - 非言語情報と重要文の選定に基つく複数人自由対話要約手法の改善
