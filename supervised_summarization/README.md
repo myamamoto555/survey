@@ -1,11 +1,19 @@
 # Neural Networkベースの手法 
 ## Abstractive Summarization
 ### 概要
+原文書を入力として、人手によって作成された要約(参照要約)を生成できるようにEncoder-Decoderモデルを訓練する。
+
+### 手法
 
 ### データセット
-
+#### 訓練用データセット
+- Gigaword Corpus
+#### 評価用データセット
+- DUC2004
 
 ### 参考文献
+- "Controlling Output Length in Neural Encoder-Decoders", EMNLP2016.
+[[pdf]](https://www.aclweb.org/anthology/D/D16/D16-1140.pdf)
 - "Abstractive Summarization with Attentive Recurrent Neural Networks", NAACL-HLT2016.
 [[pdf]](http://nlp.seas.harvard.edu/papers/naacl16_summary.pdf)
 - "Incorporating Copying Mechanism in Sequence-to-Sequence Learning", ACL2016.
@@ -29,7 +37,7 @@
 大きく分けて2つのステップに分かれる。第一に特徴量の抽出、第二に分類器の構築である。
 
 ### 特徴量の抽出
-様々な特徴量の抽出の仕方が考えられる。
+様々な特徴量の抽出方法が考えられる。
 - 文の長さ
 - 文のスコア
   - 文書とのcosine類似度などで定義
@@ -53,4 +61,5 @@
 - 多層パーセプトロン
 
 ### 参考文献
-- G.Tur et al., "Spoken Language Understanding: Systems for Extracting Semantic Information from Speech", Wiley, 2011. (会社でお借りしていた本。この本を中心にまとめました。より詳しく知りたい場合は、この本を読むのがいいと思います。)
+- G.Tur et al., "Spoken Language Understanding: Systems for Extracting Semantic Information from Speech", Wiley, 2011. 
+(この本を中心にまとめました。より詳しく知りたい場合はこの本を読むのがいいと思います。)
