@@ -5,8 +5,8 @@
 
 ### 手法
 #### Encoder-Decoderモデル
-- 小田さんの解説が分かりやすいと思います。[[url]](http://qiita.com/odashi_t/items/a1be7c4964fbea6a116e)
-- 菊池さんのスライドではAttentionモデルについても触れられています。[[url]](http://www.slideshare.net/yutakikuchi927/deep-learning-nlp-attention)
+- 機械翻訳におけるEncoder-Decoderモデルの解説。[[url]](http://qiita.com/odashi_t/items/a1be7c4964fbea6a116e)
+- Attentionモデルについての解説。[[url]](http://www.slideshare.net/yutakikuchi927/deep-learning-nlp-attention)
 
 #### 要約へのEncoder-Decoderモデルの適用
 - 本研究の先駆けとなった論文の解説スライドが分かりやすいです。[[url]](http://www.slideshare.net/yutakikuchi927/a-neural-attention-model-for-sentence-summarization))

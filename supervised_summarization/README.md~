@@ -4,12 +4,22 @@
 原文書を入力として、人手によって作成された要約(参照要約)を生成できるようにEncoder-Decoderモデルを訓練する。
 
 ### 手法
+#### Encoder-Decoderモデル
+- 小田さんの解説が分かりやすいと思います。[[url]](http://qiita.com/odashi_t/items/a1be7c4964fbea6a116e)
+- 菊池さんのスライドではAttentionモデルについても触れられています。[[url]](http://www.slideshare.net/yutakikuchi927/deep-learning-nlp-attention)
+
+#### 要約へのEncoder-Decoderモデルの適用
+- 本研究の先駆けとなった論文の解説スライドが分かりやすいです。[[url]](http://www.slideshare.net/yutakikuchi927/a-neural-attention-model-for-sentence-summarization))
 
 ### データセット
 #### 訓練用データセット
 - Gigaword Corpus
+  - 約360万対のニュース記事本文の1文目とそのタイトルの組
+
 #### 評価用データセット
 - DUC2004
+  - 500の原文書
+  - 最大4つの参照要約(75バイト以内)
 
 ### 参考文献
 - "Controlling Output Length in Neural Encoder-Decoders", EMNLP2016.
@@ -44,7 +54,7 @@
 - 文の位置
 - 手がかり語のあるなし
   - "In summary" や "as a conclusion"が文中に入っているかなど
-- 誰が話しているか
+- スピーカー情報
 - 談話関係の特徴量
 - 音声特徴量
 - 自動音声認識結果の確信度
