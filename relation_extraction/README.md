@@ -8,3 +8,11 @@
 
 - Attention-Based Bidirectional Long Short-Term Memory Networks for Relation Classification
 [[pdf]](http://www.aclweb.org/anthology/P/P16/P16-2034.pdf)
+
+
+#### Dataset
+- Distant Supervision
+  - New York Times corpus [[url]](http://iesl.cs.umass.edu/riedel/ecml/)
+
+- Supervised Relation Extraction
+  - SemEval2010 Task 8 [[url]](http://www.kozareva.com/downloads.html)
