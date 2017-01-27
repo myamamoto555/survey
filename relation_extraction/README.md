@@ -22,7 +22,8 @@
 
 ### Dataset
 - Distant Supervision
-  - New York Times corpus [[url]](http://iesl.cs.umass.edu/riedel/ecml/)
+  - New York Times corpus (NYT)[[url]](http://iesl.cs.umass.edu/riedel/ecml/)
+  - filtered version of NYT10 [[zip]](http://www.nlpr.ia.ac.cn/cip/ ̃liukang/liukangPageFile/code/ds_pcnns-master.zip)
 
 - Supervised Relation Extraction
   - SemEval2010 Task 8 [[url]](http://www.kozareva.com/downloads.html)
