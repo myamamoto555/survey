@@ -11,6 +11,8 @@
 
 - Relation Extraction with Multi-instance Multi-label Convolutional Neural Networks[[pdf]](https://www.aclweb.org/anthology/C/C16/C16-1139.pdf)
 
+- End-to-End Relation Extraction using LSTMs on Sequences and Tree Structures[[pdf]](https://aclweb.org/anthology/P/P16/P16-1105.pdf)
+
 #### 2012
 - Multi-instance Multi-label Learning for Relation Extraction[[pdf]](http://ai2-s2-pdfs.s3.amazonaws.com/151e/e8aedc97e7a388a8edd704ff13698a7af0b4.pdf)
 
@@ -27,3 +29,6 @@
 
 - Supervised Relation Extraction
   - SemEval2010 Task 8 [[url]](http://www.kozareva.com/downloads.html)
+
+### slide
+- Makoto Miwa. Learning for Information Extraction in Biomedical and General Domains.[[pdf]](http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/people/makoto.miwa/docs/keynotetalk_biotxtm2016.pdf)
