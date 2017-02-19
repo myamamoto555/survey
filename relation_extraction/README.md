@@ -20,6 +20,9 @@ Temporal Relation Extraction (時間に関する関係抽出) は扱わない。
   - CNNでAttention機構を追加して関係抽出を行っている論文
   - ネットワークの構造的にも新しい。
 
+- A Position Encoding Convolutional Neural Network Based on Dependency Tree for Relation Classification, EMNLP, 2016.
+[[pdf]](http://aclweb.org/anthology/D/D16/D16-1007.pdf)
+
 - Semantic Relation Classification via Hierarchical Recurrent Neural Network with Attention, COLING, 2016.
 [[pdf]](http://aclweb.org/anthology/C/C16/C16-1119.pdf)
 
