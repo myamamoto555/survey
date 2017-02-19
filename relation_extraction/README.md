@@ -17,7 +17,8 @@ Temporal Relation Extraction (時間に関する関係抽出) は扱わない。
 
 - Relation Classification via Multi-Level Attention CNNs, ACL, 2016.
 [[pdf]](http://aclweb.org/anthology/P/P16/P16-1123.pdf)
-  - kk
+  - CNNでAttention機構を追加して関係抽出を行っている論文
+  - ネットワークの構造的にも新しい。
 
 - Semantic Relation Classification via Hierarchical Recurrent Neural Network with Attention, COLING, 2016.
 [[pdf]](http://aclweb.org/anthology/C/C16/C16-1119.pdf)
@@ -38,6 +39,9 @@ Temporal Relation Extraction (時間に関する関係抽出) は扱わない。
 
 - Attention-Based Convolutional Neural Network for Semantic Relation Extraction, COLING, 2016.
 [[pdf]](http://aclweb.org/anthology/C/C16/C16-1238.pdf)
+  - Attention CNNで関係抽出。
+  - 単語の分散表現, POS tag, 位置情報を考慮可能。
+  - ACL2016の論文との差異は要調査。
 
 - Table Filling Multi-Task Recurrent Neural Network for Joint Entity and Relation Extraction, COLING, 2016.
 [[pdf]](http://aclweb.org/anthology/C/C16/C16-1239.pdf)
