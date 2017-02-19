@@ -4,6 +4,9 @@ Temporal Relation Extraction (時間に関する関係抽出) は扱わない。
 
 ### Paper
 #### Supervised Learning
+- Combining Recurrent and Convolutional Neural Networks for Relation Classification, NAACL, 2016 (short paper).
+[[pdf]](https://aclweb.org/anthology/N/N16/N16-1065.pdf)
+
 - Attention-Based Bidirectional Long Short-Term Memory Networks for Relation Classification, ACL, 2016 (short paper).
 [[pdf]](http://www.aclweb.org/anthology/P/P16/P16-2034.pdf)
   - Attention機構を持つ双方向LSTMを始めてRelation Extractionに適用した論文
@@ -110,3 +113,6 @@ Supervisedと違い、学習データ中にノイズが存在している(=wrong
 
 - 海野さん, 情報抽出入門.
 [[pdf]](http://www.slideshare.net/unnonouno/ss-21254386)
+
+- Relation Extraction.
+[[pdf]](https://gate.ac.uk/sale/talks/gate-course-may10/track-3/module-11-ml-adv/module-11-relations.pdf)
