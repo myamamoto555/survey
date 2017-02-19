@@ -36,6 +36,12 @@ Temporal Relation Extraction (時間に関する関係抽出) は扱わない。
 - Pairwise Relation Classification with Mirror Instances and a Combined Convolutional Neural Network, COLING, 2016.
 [[pdf]](http://aclweb.org/anthology/C/C16/C16-1223.pdf)
 
+- Attention-Based Convolutional Neural Network for Semantic Relation Extraction, COLING, 2016.
+[[pdf]](http://aclweb.org/anthology/C/C16/C16-1238.pdf)
+
+- Table Filling Multi-Task Recurrent Neural Network for Joint Entity and Relation Extraction, COLING, 2016.
+[[pdf]](http://aclweb.org/anthology/C/C16/C16-1239.pdf)
+
 
 
 #### Distant supervision
