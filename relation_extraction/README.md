@@ -52,8 +52,32 @@ Temporal Relation Extraction (時間に関する関係抽出) は扱わない。
 - Table Filling Multi-Task Recurrent Neural Network for Joint Entity and Relation Extraction, COLING, 2016.
 [[pdf]](http://aclweb.org/anthology/C/C16/C16-1239.pdf)
 
+- Combining Word Embeddings and Feature Embeddings for Fine-grained Relation Extraction, NAACL, 2015.
+[[pdf]](http://aclweb.org/anthology/N/N15/N15-1155.pdf)
+
+- Chain based RNN for Relation Classification, NAACL, 2015.
+[[pdf]](http://aclweb.org/anthology/N/N15/N15-1133.pdf)
+
+- Injecting Logical Background Knowledge into Embeddings for Relation Extraction, NAACL, 2015.
+[[pdf]](http://aclweb.org/anthology/N/N15/N15-1118.pdf)
+
+- Optimizing Multivariate Performance Measures for Learning Relation Extraction Models, NAACL, 2015.
+[[pdf]](http://aclweb.org/anthology/N/N15/N15-1090.pdf)
+
+- Classifying Relations by Ranking with Convolutional Neural Networks, ACL, 2015.
+[[pdf]](http://aclweb.org/anthology/P/P15/P15-1061.pdf)
+
+- A Dependency-Based Neural Network for Relation Classification, ACL, 2015.
+[[pdf]](http://aclweb.org/anthology/P/P15/P15-2047.pdf)
+
 - Classifying Relations via Long Short Term Memory Networks along Shortest Dependency Paths, EMNLP, 2015.
-[[pdf]](https://pdfs.semanticscholar.org/0f44/366c1e1446cfd51258c68bd1da14fe9c7f10.pdf)
+[[pdf]](http://aclweb.org/anthology/D/D15/D15-1206.pdf)
+
+- Semantic Relation Classification via Convolutional Neural Networks with Simple Negative Sampling, EMNLP, 2015.
+[[pdf]](http://aclweb.org/anthology/D/D15/D15-1062.pdf)
+
+- Improved Relation Extraction with Feature-Rich Compositional Embedding Models, EMNLP, 2015.
+[[pdf]](http://aclweb.org/anthology/D/D15/D15-1205.pdf)
 
 - Relation Classification via Convolutional Deep Neural Network, COLING, 2014.
 [[pdf]](https://aclweb.org/anthology/C/C14/C14-1220.pdf)
