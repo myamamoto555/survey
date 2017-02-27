@@ -52,6 +52,9 @@ Temporal Relation Extraction (時間に関する関係抽出) は扱わない。
 - Table Filling Multi-Task Recurrent Neural Network for Joint Entity and Relation Extraction, COLING, 2016.
 [[pdf]](http://aclweb.org/anthology/C/C16/C16-1239.pdf)
 
+- Classifying Relations via Long Short Term Memory Networks along Shortest Dependency Paths, EMNLP, 2015.
+[[pdf]](https://pdfs.semanticscholar.org/0f44/366c1e1446cfd51258c68bd1da14fe9c7f10.pdf)
+
 - Relation Classification via Convolutional Deep Neural Network, COLING, 2014.
 [[pdf]](https://aclweb.org/anthology/C/C14/C14-1220.pdf)
 
