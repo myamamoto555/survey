@@ -82,6 +82,9 @@ Temporal Relation Extraction (時間に関する関係抽出) は扱わない。
 - Relation Classification via Recurrent Neural Network, Arxiv, 2015.
 [[pdf]](https://arxiv.org/pdf/1508.01006.pdf)
 
+- Bidirectional Long Short Term Memory Networks for Relation Classification, PACLIC, 2015.
+[[pdf]](https://pdfs.semanticscholar.org/c68e/c24e2f97c6875cd006a9fa2f0fbe934e4ae0.pdf)
+
 - Relation Classification via Convolutional Deep Neural Network, COLING, 2014.
 [[pdf]](https://aclweb.org/anthology/C/C14/C14-1220.pdf)
 
