@@ -103,6 +103,12 @@ Supervisedと違い、学習データ中にノイズが存在している(=wrong
   - Distant SupervisionにおけるMulti-instance Multi-labelingの問題の解決を狙った論文
   - この問題をCNNを用いて解いていることが新しい。
 
+- Distant Supervision for Relation Extraction via Piecewise Convolutional Neural Networks, EMNLP, 2015.
+[[pdf]](http://www.emnlp2015.org/proceedings/EMNLP/pdf/EMNLP203.pdf)
+
+- Relation classification via convolutional deep neural network, COLING, 2014.
+[[pdf]](http://www.aclweb.org/anthology/C14-1220)
+
 - Multi-instance Multi-label Learning for Relation Extraction
 [[pdf]](http://ai2-s2-pdfs.s3.amazonaws.com/151e/e8aedc97e7a388a8edd704ff13698a7af0b4.pdf)
 
