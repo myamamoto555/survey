@@ -28,6 +28,11 @@
   - トピックモデルを拡張すると式の導出が難しい。
   - neural variational inferenceにより解消する。
 
+- Topic-Informed Neural Machine Translation, COLING, 2016.
+[[pdf]](http://aclweb.org/anthology/C/C16/C16-1170.pdf)
+  - 機械翻訳においてトピックモデルを適用。
+  - 1ポイント以上BLEU値が向上。
+
 ### 2015
 - Case Study: Topic Models
 [[pdf]](http://www.cs.cmu.edu/~epxing/Class/10708-15/notes/10708_scribe_lecture15.pdf)
@@ -37,3 +42,6 @@
 [[url]](https://papers.nips.cc/paper/4613-a-neural-autoregressive-topic-model)
 
 
+## 講義・スライドなど
+- Timothy Hopper: Understanding Probabilistic Topic Models By Simulation, PyData, 2015.
+[[url]](https://www.youtube.com/watch?v=_R66X_udxZQ&feature=youtu.be)
