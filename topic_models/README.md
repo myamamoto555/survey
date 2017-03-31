@@ -10,6 +10,11 @@
 
 - Gaussian LDA for Topic Models with Word Embeddings, ACL, 2015.
 [[pdf]](http://www.aclweb.org/anthology/P15-1077)
+[[code]](https://github.com/rajarshd/Gaussian_LDA)
+
+- Improving Topic Models with Latent Feature Word Representations, TACL, 2015.
+[[pdf]](https://transacl.org/ojs/index.php/tacl/article/viewFile/582/132)
+[[code]](https://github.com/datquocnguyen/LFTM)
 
 ## その他
 ### 2017
