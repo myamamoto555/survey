@@ -4,6 +4,10 @@
 [[pdf]](http://bigml.cs.tsinghua.edu.cn/~jun/pub/topic-embedding-acl2016.pdf)
 [[code]](https://github.com/askerlee/topicvec)
 
+- A Latent Concept Topic Model for Robust Topic Inference Using Word Embeddings, ACL (short), 2016.
+[[pdf]](https://www.aclweb.org/anthology/P/P16/P16-2062.pdf)
+[[code]](https://github.com/weihua916/LCTM)
+
 ### 2015
 - A Novel Neural Topic Model and Its Supervised Extension, AAAI, 2015.
 [pdf]
