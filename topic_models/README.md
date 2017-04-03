@@ -20,6 +20,10 @@
 [[pdf]](https://transacl.org/ojs/index.php/tacl/article/viewFile/582/132)
 [[code]](https://github.com/datquocnguyen/LFTM)
 
+- Topical Word Embeddings, AAAI, 2015.
+[[pdf]](http://lms.comp.nus.edu.sg/sites/default/files/publication-attachments/liuyang_chua.pdf)
+[[code]](https://github.com/largelymfs/topical_word_embeddings)
+
 ## その他
 ### 2017
 - Deep Unfolding for Topic Models, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2017.
