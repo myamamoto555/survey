@@ -53,3 +53,6 @@
 ## 講義・スライドなど
 - Timothy Hopper: Understanding Probabilistic Topic Models By Simulation, PyData, 2015.
 [[url]](https://www.youtube.com/watch?v=_R66X_udxZQ&feature=youtu.be)
+
+- Cohenrenceについての解説スライド
+[[url]](https://www.slideshare.net/hoxo_m/coherence-57598192)
