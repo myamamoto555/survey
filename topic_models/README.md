@@ -1,6 +1,18 @@
 ## Topic Models (beyond Bag-of-words assumption)
+### 2016
 - Modeling topic dependencies in semantically coherent text span with copula, COLING, 2016.
 [[pdf]](https://www.aclweb.org/anthology/C/C16/C16-1166.pdf)
+
+- On a Topic Model for Sentences, ICML, 2016.
+[[pdf]](https://arxiv.org/pdf/1606.00253.pdf)
+
+### 2009
+- Multi-Document Summarization using Sentence-based Topic Models, ACL-IJCNLP, 2009.
+[[pdf]](http://aclweb.org/anthology/P/P09/P09-2075.pdf)
+
+### 2006
+-  Topic Modeling: Beyond Bag-of-Words, ICML, 2006.
+[[pdf]](http://dirichlet.net/pdf/wallach06topic.pdf)
 
 ## Topic Models + Word Embeddings
 ### 2016
@@ -53,6 +65,9 @@
 - A Neural Autoregressive Topic Model, NIPS, 2012.
 [[url]](https://papers.nips.cc/paper/4613-a-neural-autoregressive-topic-model)
 
+### 2009
+- Evaluation Methods for Topic Models, ICML, 2009.
+[[pdf]](http://dirichlet.net/pdf/wallach09evaluation.pdf)
 
 ## 講義・スライドなど
 - Timothy Hopper: Understanding Probabilistic Topic Models By Simulation, PyData, 2015.
