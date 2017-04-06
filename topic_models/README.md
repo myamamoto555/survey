@@ -1,3 +1,7 @@
+## Topic Models (beyond Bag-of-words assumption)
+- Modeling topic dependencies in semantically coherent text span with copula, COLING, 2016.
+[[pdf]](https://www.aclweb.org/anthology/C/C16/C16-1166.pdf)
+
 ## Topic Models + Word Embeddings
 ### 2016
 - Generative Topic Embedding: a Continuous Representation of Documents, ACL, 2016.
