@@ -47,10 +47,13 @@
 
 - Multimodal Topic Labelling, EACL, 2017.
 [[pdf]](http://www.aclweb.org/anthology/E17-2111)
+  - トピックラベルを画像で表現。
 
 - Pulling Out the Stops: Rethinking Stopword Removal for Topic Models, EACL, 2017.
 [[pdf]](https://mimno.infosci.cornell.edu/papers/schofield_eacl_2017.pdf)
 
+- Evaluating Topic Representations for Exploring Document Collections, Journal of the Association for Information Science and Technology, 2017.
+[[pdf]](http://people.eng.unimelb.edu.au/tbaldwin/pubs/jasist-topiceval.pdf)
 
 ### 2016
 - Neural Variational Inference For Topic Models, NIPS Workshop, 2016.
