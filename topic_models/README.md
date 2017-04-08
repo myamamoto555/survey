@@ -45,6 +45,12 @@
 - Deep Unfolding for Topic Models, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2017.
 [[url]](http://ieeexplore.ieee.org/document/7869412/)
 
+- Multimodal Topic Labelling, EACL, 2017.
+[[pdf]](http://www.aclweb.org/anthology/E17-2111)
+
+- Pulling Out the Stops: Rethinking Stopword Removal for Topic Models, EACL, 2017.
+[[pdf]](https://mimno.infosci.cornell.edu/papers/schofield_eacl_2017.pdf)
+
 
 ### 2016
 - Neural Variational Inference For Topic Models, NIPS Workshop, 2016.
