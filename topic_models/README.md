@@ -51,11 +51,16 @@
 
 - Pulling Out the Stops: Rethinking Stopword Removal for Topic Models, EACL, 2017.
 [[pdf]](https://mimno.infosci.cornell.edu/papers/schofield_eacl_2017.pdf)
+  - トピックモデルにおけるstopwordsの影響を調査
 
 - Evaluating Topic Representations for Exploring Document Collections, Journal of the Association for Information Science and Technology, 2017.
 [[pdf]](http://people.eng.unimelb.edu.au/tbaldwin/pubs/jasist-topiceval.pdf)
+  - トピックラベルを生成する手法を初めて比較
 
 ### 2016
+- Automatic Labelling of Topics with Neural Embeddings, COLING, 2016.
+[[pdf]](http://aclweb.org/anthology/C16-1091)
+
 - Neural Variational Inference For Topic Models, NIPS Workshop, 2016.
 [[pdf]](http://bayesiandeeplearning.org/papers/BDL_27.pdf)
   - トピックモデルを拡張すると式の導出が難しい。
@@ -65,6 +70,13 @@
 [[pdf]](http://aclweb.org/anthology/C/C16/C16-1170.pdf)
   - 機械翻訳においてトピックモデルを適用。
   - 1ポイント以上BLEU値が向上。
+
+- ALTO: Active Learning with Topic Overviews for Speeding Label Induction and Document Labeling, ACL, 2016.
+[[pdf]](https://www.aclweb.org/anthology/P/P16/P16-1110.pdf)
+  - ラベリングは大変
+
+- Automatic labeling of topic models using text summaries, ACL, 2016.
+[[pdf]](http://www.aclweb.org/anthology/P11-1154)
 
 ### 2015
 - Case Study: Topic Models
