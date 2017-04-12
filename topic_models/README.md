@@ -84,9 +84,17 @@
 - Case Study: Topic Models
 [[pdf]](http://www.cs.cmu.edu/~epxing/Class/10708-15/notes/10708_scribe_lecture15.pdf)
 
+### 2013
+- Topic models and metadata for visualizing text corpora, 2013, NAACL.
+[[pdf]](https://www.cs.cmu.edu/~mgormley/papers/snyder+al.naacld.2013.pdf)
+
 ### 2012
 - A Neural Autoregressive Topic Model, NIPS, 2012.
 [[url]](https://papers.nips.cc/paper/4613-a-neural-autoregressive-topic-model)
+
+### 2011
+- Automatic Labelling of Topic Models, ACL, 2011.
+[[pdf]](http://www.aclweb.org/anthology/P11-1154)
 
 ### 2009
 - Evaluation Methods for Topic Models, ICML, 2009.
