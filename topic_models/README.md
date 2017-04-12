@@ -9,6 +9,8 @@
 ### 2009
 - Multi-Document Summarization using Sentence-based Topic Models, ACL-IJCNLP, 2009.
 [[pdf]](http://aclweb.org/anthology/P/P09/P09-2075.pdf)
+- Syntactic Topic Models, NIPS, 2009.
+[[pdf]](http://www.cs.columbia.edu/~blei/papers/Boyd-GraberBlei2009.pdf)
 
 ### 2006
 -  Topic Modeling: Beyond Bag-of-Words, ICML, 2006.
