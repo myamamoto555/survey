@@ -26,6 +26,9 @@
 [[pdf]](https://www.aclweb.org/anthology/P/P16/P16-2062.pdf)
 [[code]](https://github.com/weihua916/LCTM)
 
+- Integrating Topic Modeling with Word Embeddings by Mixtures of vMFs, COLING, 2016.
+[[pdf]](https://www.aclweb.org/anthology/C/C16/C16-1015.pdf)
+
 ### 2015
 - A Novel Neural Topic Model and Its Supervised Extension, AAAI, 2015.
 [pdf]
