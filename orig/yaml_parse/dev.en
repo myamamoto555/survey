@@ -1,0 +1,300 @@
+For example "The quick brown fox jumps over the lazy dog" will be "Tqbfjotld"▖ 
+The array or hash form is only available in model instances▖ 
+The [Symantec Global Internet Security threat report](http://eval▖symantec▖com/mktginfo/enterprise/white_papers/b-whitepaper_internet_security_threat_report_xiii_04-2008▖en-us▖pdf) also documented 239 browser plug-in vulnerabilities in the last six months of 2007▖ 
+**CSRF** Cross-Site Request Forgery (CSRF), also known as Cross-Site Reference Forgery (XSRF), is a gigantic attack method, it allows the attacker to do everything the administrator or Intranet user may do▖ 
+Usually a web application includes access control▖ 
+This could be in a search action and the user may enter a project's name that they want to find▖ 
+Verify_recaptcha will return false if the validation fails.
+The application grants access when it finds a record▖ 
+The e-mail claimed there was an e-card waiting for them, but it also contained an image tag that resulted in a HTTP-GET request to reconfigure the user's router (which is a popular model in Mexico)▖ 
+If the user changes the id to 42, and they are not allowed to see that information, they will have access to it anyway▖ 
+* make the elements very small or color them the same as the background of the page
+* Does the admin really have to access the interface from everywhere in the world? 
+Rails provides helper methods to fend these attacks off.
+See below for details.
+Remember that there might be a proxy in use, though.
+A blacklist can be a list of bad e-mail addresses, non-public actions or bad HTML tags▖ 
+Another example changed Google Adsense's e-mail address and password by▖ 
+### Whitelists versus Blacklists
+Another goal is to carry out data manipulation or reading arbitrary data▖ 
+Or a _special password for very serious actions_?
+In 2007 there was the first tailor-made trojan which stole information from an Intranet, namely the "Monster for employers" web site of Monster▖com, an online recruitment web application▖ 
+SELECT * FROM users WHERE login = '' OR '1'='1' AND password = '' OR '2'>'1' LIMIT 1
+Note that this only protects you against the most common mistake when using the format validator - you always need to keep in mind that ^ and $ match the **line** beginning and line end in Ruby, and not the beginning and end of a string.
+Think about _limiting the login to a bunch of source IP addresses_▖ 
+config▖filter_parameters << :password
+raise if basename !
+Most XSS examples simply display an alert box, but it is more powerful than that▖ 
+send_file filename, disposition: 'inline'
+Good ones, such as the popular [devise](https://github▖com/plataformatec/devise) and [authlogic](https://github▖com/binarylogic/authlogic), store only encrypted passwords, not plain-text passwords▖ 
+Here is an example of how not to use user input data in a query:
+So the query returns all records from the projects table including those blind to the user▖ 
+An entry point is a vulnerable URL and its parameters where an attacker can start an attack.
+However, this is a very devastating and common attack in web applications, so it is important to understand the problem.
+XSS attacks work like this: An attacker injects some code, the web application saves it and displays it on a page, later presented to a victim▖ 
+Or you can pass a hash for the same result:
+NOTE: _Make sure users cannot download arbitrary files.
+Although this would require several extra-security measures, the opposite is the case in the real world.
+The first section, however, covers an architectural decision in connection with Injection.
+But not only spam robots (bots) are a problem, but also automatic login bots▖ 
+This is because of the same origin policy in your browser: An injected (XSS) script on www▖application▖com may not read the cookie for admin▖application▖com and vice-versa.
+The send_file() method sends files from the server to the client▖ 
+The attacker may even do 1,000 lucky guesses by just including malicious IMG-tags which try every possible combination.
+Possible exploits include stealing the privileged administrator's cookie, injecting an iframe to steal the administrator's password or installing malicious software through browser security holes to take over the administrator's computer.
+SELECT * FROM users WHERE (users▖activation_code IS NULL) LIMIT 1
+This is not bullet-proof, but a great barrier▖ 
+#### Other
+### Additional Precautions
+You could _introduce roles_ for the admin interface to limit the possibilities of the attacker▖ 
+#### Introduction
+This is alright for some web applications, but certainly not if the user is not authorized to view all projects▖ 
+NOTE: _Brute-force attacks on accounts are trial and error attacks on the login credentials▖ 
+However, the highest threat to Intranet and Admin applications are XSS and CSRF▖ 
+ It is _recommended to use the SafeErb plugin_ also in an Intranet or administration interface.
+The only problem for the attacker is, that the number of columns has to be the same in both queries▖ 
+SELECT * FROM projects WHERE (name = '') UNION
+#### Bypassing Authorization
+') UNION SELECT id,login AS name,password AS description,1,1,1 FROM users --
+Of course, the attacker has to know the URL structure, but most Rails URLs are quite straightforward or they will be easy to find out, if it is an open-source application's admin interface▖ 
+If the parameter was nil, the resulting SQL query will be
+You can do this with annoying users, too.
+But keep them up-to-date, too▖ 
+```sql
+In many cases CSRF and XSS will help to do so▖ 
+On the server side, you will check the value of the field: If it contains any text, it must be a bot▖ 
+  /\Ahttps?:\/\/[^\n]+\z/i
+That is why even many Ruby and Rails books get this wrong▖ 
+Say you wanted to loosely validate a URL field and you used a simple regular expression like this:
+The following sections will cover all important contexts where injection attacks may happen▖ 
+#### Entry Points
+To fix the regular expression, \A and \z should be used instead of ^ and $, like so:
+That's why the second query includes a list of ones (1), which will be always the value 1, in order to match the number of columns in the first query.
+* leave the fields displayed, but tell humans to leave them blank
+* Randomize the field names
+    * But reject malformed input
+If a malicious user enters ' OR 1 --, the resulting SQL query will be:
+It is often used to protect comment forms from automatic spam bots by asking the user to type the letters of a distorted image▖ 
+The link looks innocent to visitors, but when it's clicked, it will execute the JavaScript function "exploit_code" or any other JavaScript the attacker provides.
+A popular CAPTCHA API is [reCAPTCHA](http://recaptcha▖net/) which displays two distorted images of words from old books▖ 
+http://hi▖com
+You will get two keys from the API, a public and a private key, which you have to put into your Rails environment▖ 
+AND password = ?", entered_user_name, entered_password)▖first
+Although sometimes it is not possible to create a whitelist (in a SPAM filter, for example), _prefer to use whitelist approaches_:
+Instead, _query the user's access rights, too_:
+### Brute-Forcing Accounts
+As you can see, the first part of the array is an SQL fragment with question marks▖ 
+### Cross-Site Scripting (XSS)
+filename = File▖expand_path(File▖join(basename, @file▖public_filename))
+### Good Passwords
+Simply pass a file name like "▖▖/▖▖/▖▖/etc/passwd" to download the server's login information▖ 
+This URL passes the filter because the regular expression matches - the second line, the rest does not matter▖ 
+INFO: _A CAPTCHA is a challenge-response test to determine that the response is not generated by a computer▖ 
+A list of user names for your web application may be misused to brute-force the corresponding passwords, because most people don't use sophisticated passwords▖ 
+This malicious attack injects client-side executable code▖ 
+This may work fine in some languages▖ 
+Instead of passing a string to the conditions option, you can pass an array to sanitize tainted strings like this:
+Remember that every parameter may be changed, no matter how much you hide or obfuscate it.
+So hopefully you encrypted the passwords in the database! 
+After activating the account, the activation_code columns will be set to NULL in the database▖ 
+In order to mitigate such attacks, _display a generic error message on forgot-password pages, too_▖ 
+This way the bot will be satisfied and moves on▖ 
+The attachment_fu plugin does this in a similar way.
+@project = @current_user▖projects▖find(params[:id])
+Everyone who accessed the banking site through that router saw the attacker's fake web site and had their credentials stolen.
+### Account Hijacking
+Be sure to update your Rails [to at least 2▖1▖1](http://www▖rorsecurity▖info/2008/09/08/sql-injection-issue-in-limit-and-offset-parameter/).
+Tailor-made Trojans are very rare, so far, and the risk is quite low, but it is certainly a possibility and an example of how the security of the client host is important, too▖ 
+The problem with CAPTCHAs is, they are annoying▖ 
+---------------
+### CAPTCHAs
+  /^https?:\/\/[^\n]+$/i
+Intranet and administration interfaces are popular attack targets, because they allow privileged access▖ 
+Don't write them down, but use the initial letters of each word in an easy to remember sentence.
+_JavaScript can be used to validate user input data, but certainly not to prevent attackers from sending malicious requests with unexpected values_▖ 
+The two dashes start a comment ignoring everything after it▖ 
+WARNING: _Tell Rails not to put passwords in the log files.
+As a rule of thumb, _no user input data is secure, until proven otherwise, and every parameter from the user is potentially manipulated_.
+In Rails 3▖1 you can use the built-in `has_secure_password` method which has similar features.
+  link_to "Homepage", @user▖homepage
+If the victim was logged in to Google Mail, the attacker would change the filters to forward all e-mails to their e-mail address▖ 
+If you use a file name, that the user entered, without filtering, any file can be downloaded:
+Applications, such as the [Live HTTP Headers Firefox plugin](http://livehttpheaders▖mozdev▖org/), or client-site proxies make it easy to change requests.
+Because of this, most web applications will display a generic error message "user name or password not correct", if one of these are not correct▖ 
+A good password is a long alphanumeric combination of mixed cases▖ 
+Here are some thoughts about this:
+By default, Rails logs all requests being made to the web application▖ 
+This is nearly as harmful as hijacking the entire account▖ 
+  validates :content, format: { with: /^Meanwhile$/, multiline: true }
+* position the fields off of the visible area of the page
+As a countermeasure, _review your application logic and eliminate all XSS and CSRF vulnerabilities_.
+Prominent examples of injection are cross-site scripting (XSS) and SQL injection.
+### SQL Injection
+This will result in the following SQL query:
+_If your Apache DocumentRoot points to Rails' /public directory, do not put file uploads in it_, store files at least one level downwards.
+After they change it, they will go to the forgotten-password page and the (possibly new) password will be mailed to the attacker's e-mail address▖ 
+And _require the user to enter the old password when changing it_.
+The following shows a typical database query in Rails to find the first record in the users table which matches the login credentials parameters supplied by the user.
+NOTE: _When sanitizing, protecting or verifying something, prefer whitelists over blacklists.
+Encrypting secrets and passwords in the database will be quite useless, if the log files list them in clear text▖ 
+* Don't try to correct user input by blacklists:
+**XSS** If your application re-displays malicious user input from the extranet, the application will be vulnerable to XSS▖ User names, comments, spam reports, order addresses are just a few uncommon examples, where there can be XSS.
+The idea of a negative CAPTCHA is not for a user to prove that they are human, but reveal that a robot is a robot.
+SELECT * FROM projects WHERE name = '' OR 1 --'
+But the input does not necessarily have to come from input boxes on web sites, it can be in any URL parameter - obvious, hidden or internal▖ 
+You can try `sanitize_sql()` elsewhere▖ 
+---------------------------
+If an attacker knows your user name and you use a weak password, your account will be easily cracked.
+And thus it found the first user in the database, returned it and logged them in▖ 
+http://localhost:3006/user/activate
+And now let's inject another query using the UNION statement:
+The idea of negative CAPTCHAs is not to ask a user to proof that they are human, but reveal that a spam robot is a bot.
+The common admin interface works like this: it's located at www▖example▖com/admin, may be accessed only if the admin flag is set in the User model, re-displays user input and allows the admin to delete/add/edit whatever data desired▖ 
+In this proof-of-concept attack, the victim would have been lured to a web site controlled by the attacker▖ 
+After that you can use the recaptcha_tags method in the view, and the verify_recaptcha method in the controller▖ 
+Most passwords are a combination of dictionary words and possibly numbers▖ 
+* Include a field with the current UTC time-stamp in it and check it on the server▖ 
+NOTE: _Almost every web application has to deal with authorization and authentication▖ 
+As you have already seen above how CSRF works, here are a few examples of what attackers can do in the Intranet or admin interface.
+INFO: _A common pitfall in Ruby's regular expressions is to match the string's beginning and end by ^ and $, instead of \A and \z.
+INFO: _Injection is a class of attacks that introduce malicious code or parameters into a web application in order to run it within its security context▖ 
+If it said "the user name you entered has not been found", an attacker could automatically compile a list of user names.
+If it is easy to change the password, the attacker will hijack the account with a few clicks▖ 
+  # content should include a line "Meanwhile" anywhere in the string
+Note, however, that this is not a bullet-proof solution against automatic programs, because these programs may change their IP address exactly as often▖ 
+When designing a web application security concept, you should also think about what will happen if an attacker got (full) access to the web server▖ 
+Depending on your web application, there may be more ways to hijack the user's account▖ 
+Another popular attack is to spam your web application, your blog or forum to propagate malicious XSS▖ 
+The request changed the DNS-settings so that requests to a Mexico-based banking site would be mapped to the attacker's site▖ 
+If the victim was logged into Google Adsense, the administration interface for Google advertisements campaigns, an attacker could change their credentials▖ 
+Note that this is just an example, you should not use well known phrases like these, as they might appear in cracker dictionaries, too.
+Let's take the example from above:
+This way you don't forget to turn it off for newly added actions.
+Refer to the Injection section for countermeasures against XSS.
+basename = File▖expand_path(File▖join(File▖dirname(__FILE__), '▖.
+* Allow &lt;strong&gt; instead of removing &lt;script&gt; against Cross-Site Scripting (XSS)▖ 
+The attackers sent a malicious e-mail, with CSRF in it, to Mexican users▖ 
+### Regular Expressions
+Or how about _special login credentials_ for the admin interface, other than the ones used for the public part of the application▖ 
+_It is advisable to update your plug-ins from time to time_▖ 
+The most common parameter that a user might tamper with, is the id parameter, as in `http://www▖domain▖com/project/1`, whereas 1 is the id▖ 
+These pages often admit that the entered user name or e-mail address has (not) been found▖ 
+Injection is very tricky, because the same code or parameter can be malicious in one context, but totally harmless in another▖ 
+User▖find_by_activation_code(params[:id])
+Having one single place in the admin interface or Intranet, where the input has not been sanitized, makes the entire application vulnerable▖ 
+Project▖where("name = '#{params[:name]}'")
+However, what most web application designers neglect, are the forgot-password pages▖ 
+#### Unauthorized Reading
+Fend them off with more generic error messages and possibly require to enter a CAPTCHA▖_
+INFO: _The most widespread, and one of the most devastating security vulnerabilities in web applications is XSS▖ 
+Why not be different and make it more difficult?.
+The sanitized versions of the variables in the second part of the array replace the question marks▖ 
+This makes stealing an admin cookie from the usual domain, www▖application▖com, impossible▖ 
+INFO: _Do you find it hard to remember all your passwords? 
+SQL injection attacks aim at influencing database queries by manipulating web application parameters▖ 
+User▖first("login = '#{params[:name]}' AND password = '#{params[:password]}'")
+A popular goal of SQL injection attacks is to bypass authorization▖ 
+This will simply find the first record in the database, and grants access to this user.
+A simple solution against this, is to _check that the requested file is in the expected directory_:
+Whitelists are also a good approach against the human factor of forgetting something in the blacklist.
+### Logging
+It also adds an angled line, rather than a distorted background and high levels of warping on the text as earlier CAPTCHAs did, because the latter were broken▖ 
+The Web Developer Toolbar for Mozilla Firefox lets you review and change every form's hidden fields▖ 
+XSS can steal the cookie, hijack the session, redirect the victim to a fake website, display advertisements for the benefit of the attacker, change elements on the web site to get confidential information or install malicious software through security holes in the web browser.
+Many web applications make it easy to hijack user accounts▖ 
+So how is this a security threat? 
+The user enters their login credentials and the web application tries to find the matching record in the users table▖ 
+     File▖expand_path(File▖join(File▖dirname(filename), '▖.
+* Use before_action only: [▖▖▖] instead of except: [▖▖▖]▖ 
+  SELECT id,login AS name,password AS description,1,1,1 FROM users --'
+Moreover, you can review your application to find more flaws like this.
+    * This will make the attack work: "&lt;sc&lt;script&gt;ript&gt;"▖gsub("&lt;script&gt;", "")
+However, password cracker dictionaries contain a large number of today's passwords, and they try out all kinds of (alphanumerical) combinations▖ 
+WARNING: _Changing a single parameter may give the user unauthorized access▖ 
+So armed with a list of user names and a dictionary, an automatic program may find the correct password in a matter of minutes.
+* _Put the admin interface to a special sub-domain_ such as admin▖application▖com and make it a separate application with its own user management▖ 
+That is an easy way to bypass any JavaScript validations▖ 
+However, here is the finder from the activation action:
+### Privilege Escalation
+And thus a URL like this passes the filter without problems:
+Don't be fooled by security by obfuscation and JavaScript security▖ 
+You can _filter certain request parameters from your log files_ by appending them to `config▖filter_parameters` in the application configuration▖ 
+Also, the second query renames some columns with the AS statement so that the web application displays the values from the user table▖ 
+Then, you can either ignore the post or return a positive result, but not saving the post to the database▖ 
+@project = Project▖find(params[:id])
+However, _in Ruby ^ and $ match the **line** beginning and line end_▖ 
+User Management
+Injection
+javascript:exploit_code();/*
+The Live Http Headers plugin for Mozilla Firefox logs every request and may repeat and change them▖ 
+Negative CAPTCHAs take advantage of that and include a "honeypot" field in the form which will be hidden from the human user by CSS or JavaScript.
+On that site is a crafted IMG-tag which results in a HTTP GET request that changes the filter settings of Google Mail▖ 
+Examine request▖remote_ip to find out about the user's IP address▖ 
+This allows an attacker to compile a list of user names and brute-force the accounts.
+During the second half of 2007, there were 88 vulnerabilities reported in Mozilla browsers, 22 in Safari, 18 in IE, and 12 in Opera▖ 
+But log files can be a huge security issue, as they may contain login credentials, credit card numbers et cetera▖ 
+It turns out that most of the passwords are quite easy to crack▖ 
+Just as you have to filter file names for uploads, you have to do so for downloads▖ 
+Another (additional) approach is to store the file names in the database and name the files on the disk after the ids in the database▖ 
+If you do need to use ^ and $ instead of \A and \z (which is rare), you can set the :multiline option to true, like so:
+For _countermeasures against CSRF in administration interfaces and Intranet applications, refer to the countermeasures in the CSRF section_.
+There are a number of authentication plug-ins for Rails available▖ 
+Instead of rolling your own, it is advisable to use common plug-ins▖ 
+* Include more than one honeypot field of all types, including submission buttons
+As this is quite hard to remember, it is advisable to enter only the _first letters of a sentence that you can easily remember_▖ 
+Remember that the user may intercept any traffic▖ 
+It is interesting that only 4% of these passwords were dictionary words and the great majority is actually alphanumeric▖ 
+So _negative CAPTCHAs might not be good to protect login forms_.
+Or if the change-password form is vulnerable to CSRF, the attacker will be able to change the victim's password by luring them to a web page where there is a crafted IMG-tag which does the CSRF▖ 
+Intranet and Admin Security
+You can find more sophisticated negative CAPTCHAs in Ned Batchelder's [blog post](http://nedbatchelder▖com/text/stopbots▖html):
+The 20 most common passwords are:
+Additionally, some visually impaired users have found certain kinds of distorted CAPTCHAs difficult to read▖ 
+The most simple negative CAPTCHA is one hidden honeypot field▖ 
+As a countermeasure, _make change-password forms safe against CSRF_, of course▖ 
+A context can be a scripting, query or programming language, the shell or a Ruby/Rails method▖ 
+However, an attacker may possibly bypass this check with SQL injection▖ 
+#### Countermeasures
+An attacker can use it to read arbitrary data from the database▖ 
+If an attacker enters ' OR '1'='1 as the name, and ' OR '2'>'1 as the password, the resulting SQL query will be:
+Think of a situation where an attacker has stolen a user's session cookie and thus may co-use the application▖ 
+If someone requested an URL like these, they would be logged in as the first activated user found in the database (and chances are that this is the administrator):
+As a countermeasure _require the user to enter the password when changing the e-mail address, too_.
+This is because the condition is true for all records.
+Moreover, you can _require to enter a CAPTCHA after a number of failed logins from a certain IP address_▖ 
+This is also a good approach to avoid possible code in an uploaded file to be executed▖ 
+And there are even client-side proxies that allow you to intercept any request and response from and to the Internet.
+send_file('/var/www/uploads/' + params[:filename])
+A few additional precautions can make your application even more secure.
+The result won't be a list of projects (because there is no project with an empty name), but a list of user names and their password▖ 
+However, the attacker may also take over the account by changing the e-mail address▖ 
+_Make it a habit to think about the security consequences when using an external string in SQL_.
+Note that this protects you only from automatic bots, targeted tailor-made bots cannot be stopped by this▖ 
+---------
+However, it raises the barrier of an attack.
+If it is too far in the past, or if it is in the future, the form is invalid.
+Depending on your web application, there will be many more parameters the user can tamper with▖ 
+For example, as in a CSRF vulnerability in [Google Mail](http://www▖gnucitizen▖org/blog/google-gmail-e-mail-hijack-technique/)▖ 
+There, you will most likely do something like this:
+http://localhost:3006/user/activate?id=
+Model▖where(login: entered_user_name, password: entered_password)▖first
+Every new user gets an activation code to activate their account when they get an e-mail with a link in it▖ 
+Most bots are really dumb, they crawl the web and put their spam into every form's field they can find▖ 
+password1, abc123, myspace1, password, blink182, qwerty1, ****you, 123abc, baseball1, football1, 123456, soccer, monkey1, liverpool1, princess1, jordan23, slipknot1, superman1, iloveyou1, and monkey.
+Ruby on Rails has a built-in filter for special SQL characters, which will escape ' , " , NULL character and line breaks▖ 
+#### Passwords
+This is opposed to a whitelist which lists the good e-mail addresses, public actions, good HTML tags and so on▖ 
+As a bonus, using reCAPTCHA helps to digitize old books▖ 
+Ruby uses a slightly different approach than many other languages to match the end and the beginning of a string▖ 
+[ReCAPTCHA](https://github▖com/ambethia/recaptcha/) is also a Rails plug-in with the same name as the API.
+Since this is a frequent mistake, the format validator (validates_format_of) now raises an exception if the provided regular expression starts with ^ or ends with $▖ 
+The UNION statement connects two SQL queries and returns the data in one set▖ 
+It will be available in params in the controller▖ 
+#### E-Mail
+Now imagine we had a view that showed the URL like this:
+Model▖where("login = ? 
+The most common entry points are message posts, user comments, and guest books, but project titles, document names and search result pages have also been vulnerable - just about everywhere where the user can input data▖ 
+### File Downloads
+This is possible because on some servers, this way the parameter id, as in params[:id], would be nil▖ 
+These parameters will be marked [FILTERED] in the log.
+Here are some ideas how to hide honeypot fields by JavaScript and/or CSS:
+INFO: _Thanks to clever methods, this is hardly a problem in most Rails applications▖ 
