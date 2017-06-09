@@ -1,0 +1,300 @@
+▁For ▁example ▁" The ▁quick ▁br own ▁ fo x ▁jump s ▁over ▁the ▁ lazy ▁do g " ▁will ▁be ▁" T q b f j o t ld "▖
+▁The ▁array ▁or ▁hash ▁form ▁is ▁only ▁available ▁in ▁model ▁instance s ▖
+▁The ▁[ S ymantec ▁G lo b al ▁ Internet ▁ Security ▁ threat ▁report ]( http :// eval ▖ s ymantec ▖ com / m k t g info / e nterprise / white _ paper s / b - white paper _ in ter net _ security _ threat _ re port _ x i i i _ 04 - 2008 ▖ en - us ▖ p d f ) ▁also ▁document ed ▁ 23 9 ▁browser ▁p l ug - in ▁vulnerabilities ▁in ▁the ▁last ▁ s i x ▁ months ▁of ▁200 7 ▖
+▁** CSRF ** ▁C ross - Site ▁ Request ▁For ge ry ▁( CSRF ), ▁also ▁known ▁as ▁C ross - Site ▁Reference ▁For ge ry ▁( X S R F ), ▁is ▁a ▁g ig an tic ▁attack ▁method , ▁it ▁allows ▁the ▁attacker ▁to ▁do ▁everything ▁the ▁administrator ▁or ▁Intranet ▁user ▁may ▁do ▖
+▁U s u ally ▁a ▁web ▁application ▁includes ▁access ▁control ▖
+▁This ▁could ▁be ▁in ▁a ▁search ▁action ▁and ▁the ▁user ▁may ▁enter ▁a ▁project ' s ▁name ▁that ▁they ▁want ▁to ▁find ▖
+▁Verify _ recaptcha ▁will ▁return ▁false ▁if ▁the ▁validation ▁fails .
+▁The ▁application ▁gra nt s ▁access ▁when ▁it ▁find s ▁a ▁record ▖
+▁The ▁e - mail ▁c la im ed ▁there ▁was ▁an ▁e - card ▁wait ing ▁for ▁them , ▁but ▁it ▁also ▁contain ed ▁an ▁image ▁tag ▁that ▁result ed ▁in ▁a ▁HTTP - GET ▁request ▁to ▁re configure ▁the ▁user ' s ▁route r ▁( which ▁is ▁a ▁popular ▁model ▁in ▁M ex ic o )▖
+▁If ▁the ▁user ▁changes ▁the ▁id ▁to ▁ 42, ▁and ▁they ▁are ▁not ▁allow ed ▁to ▁see ▁that ▁information , ▁they ▁will ▁have ▁access ▁to ▁it ▁any way ▖
+▁* ▁make ▁the ▁elements ▁very ▁small ▁or ▁ color ▁them ▁the ▁same ▁as ▁the ▁background ▁of ▁the ▁page
+▁* ▁Doe s ▁the ▁admin ▁really ▁have ▁to ▁access ▁the ▁interface ▁from ▁every where ▁in ▁the ▁world ?
+▁Rails ▁provides ▁helper ▁methods ▁to ▁f end ▁these ▁attacks ▁off .
+▁See ▁below ▁for ▁details .
+▁ Remember ▁that ▁there ▁m ight ▁be ▁a ▁ proxy ▁in ▁use , ▁though .
+▁A ▁blacklist ▁can ▁be ▁a ▁list ▁of ▁ bad ▁e - mail ▁addresses , ▁non - public ▁actions ▁or ▁ bad ▁HTML ▁tags ▖
+▁A nother ▁example ▁changed ▁ Google ▁A d s en se ' s ▁e - mail ▁address ▁and ▁password ▁by ▖
+▁### ▁Whi te list s ▁ v ers us ▁ Blacklist s
+▁A nother ▁goal ▁is ▁to ▁c ar ry ▁out ▁data ▁ manipulati on ▁or ▁reading ▁arbitrar y ▁data ▖
+▁Or ▁a ▁ _ special ▁password ▁for ▁very ▁serious ▁actions _ ?
+▁In ▁200 7 ▁there ▁was ▁the ▁first ▁tailor - ma de ▁ tr o ja n ▁which ▁ s to le ▁information ▁from ▁an ▁Intranet , ▁name ly ▁the ▁" M on s ter ▁for ▁e mp lo y ers " ▁web ▁site ▁of ▁Mon s ter ▖ com , ▁an ▁online ▁re c ru it ment ▁web ▁application ▖
+▁ SELECT ▁* ▁FROM ▁users ▁WHERE ▁login ▁= ▁ '' ▁OR ▁'1' =' 1 ' ▁ AND ▁password ▁= ▁ '' ▁OR ▁' 2 ' > ' 1 ' ▁LIMIT ▁1
+▁Note ▁that ▁this ▁only ▁protect s ▁you ▁again st ▁the ▁most ▁common ▁mistake ▁when ▁using ▁the ▁format ▁validator ▁- ▁you ▁always ▁need ▁to ▁keep ▁in ▁mind ▁that ▁ ^ ▁and ▁$ ▁match ▁the ▁** line ** ▁beginning ▁and ▁line ▁end ▁in ▁Ruby , ▁and ▁not ▁the ▁beginning ▁and ▁end ▁of ▁a ▁string .
+▁ Thin k ▁about ▁ _ limit ing ▁the ▁login ▁to ▁a ▁b un ch ▁of ▁source ▁ IP ▁addresses _ ▖
+▁config ▖ filter _ parameters ▁<< ▁: password
+▁raise ▁if ▁base name ▁ !
+▁ Most ▁XSS ▁examples ▁simply ▁display ▁an ▁ alert ▁ box , ▁but ▁it ▁is ▁more ▁powerful ▁than ▁that ▖
+▁send _ file ▁filename , ▁di s position : ▁' inline '
+▁G ood ▁one s , ▁such ▁as ▁the ▁popular ▁[ devise ]( https :// github ▖ com / plat a format ec / devise ) ▁and ▁[ authlogic ]( https :// github ▖ com / bin ary log ic / authlogic ), ▁store ▁only ▁ encrypted ▁passwords , ▁not ▁plain - text ▁passwords ▖
+▁Here ▁is ▁an ▁example ▁of ▁how ▁not ▁to ▁use ▁user ▁input ▁data ▁in ▁a ▁query :
+▁So ▁the ▁query ▁returns ▁all ▁records ▁from ▁the ▁ projects ▁table ▁including ▁those ▁b li nd ▁to ▁the ▁user ▖
+▁An ▁entry ▁point ▁is ▁a ▁vulnerable ▁URL ▁and ▁its ▁parameters ▁where ▁an ▁attacker ▁can ▁start ▁an ▁attack .
+▁However , ▁this ▁is ▁a ▁very ▁ dev a st ating ▁and ▁common ▁attack ▁in ▁web ▁applications , ▁so ▁it ▁is ▁important ▁to ▁understand ▁the ▁problem .
+▁XSS ▁attacks ▁work ▁like ▁this : ▁An ▁attacker ▁ inject s ▁some ▁code , ▁the ▁web ▁application ▁save s ▁it ▁and ▁display s ▁it ▁on ▁a ▁page , ▁later ▁present ed ▁to ▁a ▁victim ▖
+▁Or ▁you ▁can ▁pass ▁a ▁hash ▁for ▁the ▁same ▁result :
+▁NOTE : ▁ _ Make ▁sure ▁users ▁cannot ▁ download ▁arbitrar y ▁files .
+▁A lthough ▁this ▁would ▁require ▁sever al ▁extra - security ▁me a sure s , ▁the ▁oppos ite ▁is ▁the ▁case ▁in ▁the ▁real ▁world .
+▁The ▁first ▁section , ▁however , ▁cover s ▁an ▁ ar ch ite c t ur al ▁ de ci s ion ▁in ▁connection ▁with ▁Injection .
+▁But ▁not ▁only ▁ s p a m ▁ r o bo t s ▁( bo t s ) ▁are ▁a ▁problem , ▁but ▁also ▁automatic ▁login ▁ bo t s ▖
+▁This ▁is ▁because ▁of ▁the ▁same ▁ origin ▁p ol ic y ▁in ▁your ▁browser : ▁An ▁ inject ed ▁( XSS ) ▁ script ▁on ▁ www ▖ application ▖ com ▁may ▁not ▁read ▁the ▁cookie ▁for ▁admin ▖ application ▖ com ▁and ▁ v ice - v ers a .
+▁The ▁send _ file () ▁method ▁send s ▁files ▁from ▁the ▁server ▁to ▁the ▁client ▖
+▁The ▁attacker ▁may ▁even ▁do ▁1, 000 ▁ l u c k y ▁guess es ▁by ▁just ▁including ▁ malicious ▁ IM G - tags ▁which ▁try ▁every ▁possible ▁combination .
+▁P o s s ible ▁ exploit s ▁include ▁steal ing ▁the ▁privilege d ▁administrator ' s ▁cookie , ▁ inject ing ▁an ▁ iframe ▁to ▁steal ▁the ▁administrator ' s ▁password ▁or ▁ installing ▁ malicious ▁software ▁through ▁browser ▁security ▁hole s ▁to ▁take ▁over ▁the ▁administrator ' s ▁computer .
+▁ SELECT ▁* ▁FROM ▁users ▁WHERE ▁( users ▖ activation _ code ▁ IS ▁NULL ) ▁LIMIT ▁1
+▁This ▁is ▁not ▁b ul let - proof , ▁but ▁a ▁great ▁bar ri er ▖
+▁#### ▁Other
+▁### ▁Additional ▁P re c a u tion s
+▁You ▁could ▁ _ in tr o d u ce ▁role s _ ▁for ▁the ▁admin ▁interface ▁to ▁ limit ▁the ▁possibilities ▁of ▁the ▁attacker ▖
+▁#### ▁In tr o duction
+▁This ▁is ▁ al right ▁for ▁some ▁web ▁applications , ▁but ▁certain ly ▁not ▁if ▁the ▁user ▁is ▁not ▁ authorize d ▁to ▁view ▁all ▁ projects ▖
+▁NOTE : ▁ _ B r ute - force ▁attacks ▁on ▁account s ▁are ▁tri al ▁and ▁error ▁attacks ▁on ▁the ▁login ▁credentials ▖
+▁However , ▁the ▁high est ▁ threat ▁to ▁Intranet ▁and ▁ Admin ▁applications ▁are ▁XSS ▁and ▁CSRF ▖  
+▁It ▁is ▁ _ re com m end ed ▁to ▁use ▁the ▁S a fe E rb ▁plugin _ ▁also ▁in ▁an ▁Intranet ▁or ▁admin ist r ation ▁interface .
+▁The ▁only ▁problem ▁for ▁the ▁attacker ▁is , ▁that ▁the ▁number ▁of ▁columns ▁has ▁to ▁be ▁the ▁same ▁in ▁both ▁queries ▖
+▁ SELECT ▁* ▁FROM ▁ projects ▁WHERE ▁( name ▁= ▁ '') ▁UNION
+▁#### ▁By passing ▁Author i z ation
+▁ ') ▁UNION ▁ SELECT ▁id , login ▁AS ▁name , password ▁AS ▁ description , 1, 1, 1 ▁FROM ▁users ▁--
+▁Of ▁course , ▁the ▁attacker ▁has ▁to ▁know ▁the ▁URL ▁structure , ▁but ▁most ▁Rails ▁URLs ▁are ▁quite ▁straightforward ▁or ▁they ▁will ▁be ▁easy ▁to ▁find ▁out , ▁if ▁it ▁is ▁an ▁open - source ▁application ' s ▁admin ▁interface ▖
+▁If ▁the ▁parameter ▁was ▁nil , ▁the ▁result ing ▁SQL ▁query ▁will ▁be
+▁You ▁can ▁do ▁this ▁with ▁an no y ing ▁users , ▁too .
+▁But ▁keep ▁them ▁up - to - date , ▁too ▖
+▁``` sql
+▁In ▁many ▁cases ▁CSRF ▁and ▁XSS ▁will ▁help ▁to ▁do ▁so ▖
+▁On ▁the ▁server ▁ side , ▁you ▁will ▁check ▁the ▁value ▁of ▁the ▁field : ▁If ▁it ▁contains ▁any ▁text , ▁it ▁must ▁be ▁a ▁ bo t ▖
+▁ / \ A https ? : \ / \ / [ ^ \ n ] + \ z / i
+▁That ▁is ▁why ▁even ▁many ▁Ruby ▁and ▁Rails ▁ books ▁get ▁this ▁wrong ▖
+▁S a y ▁you ▁want ed ▁to ▁ lo o se ly ▁validate ▁a ▁URL ▁field ▁and ▁you ▁used ▁a ▁simple ▁regular ▁expression ▁like ▁this :
+▁The ▁following ▁section s ▁will ▁cover ▁all ▁important ▁context s ▁where ▁injection ▁attacks ▁may ▁happen ▖
+▁#### ▁En try ▁P o in t s
+▁To ▁fix ▁the ▁regular ▁expression , ▁\ A ▁and ▁\ z ▁should ▁be ▁used ▁instead ▁of ▁ ^ ▁and ▁$ , ▁like ▁so :
+▁That ' s ▁why ▁the ▁second ▁query ▁includes ▁a ▁list ▁of ▁one s ▁ (1) , ▁which ▁will ▁be ▁always ▁the ▁value ▁1, ▁in ▁order ▁to ▁match ▁the ▁number ▁of ▁columns ▁in ▁the ▁first ▁query .
+▁* ▁leave ▁the ▁fields ▁displayed , ▁but ▁tell ▁ human s ▁to ▁leave ▁them ▁blank
+▁* ▁R an dom ize ▁the ▁field ▁names
+▁* ▁But ▁reject ▁m al form ed ▁input
+▁If ▁a ▁ malicious ▁user ▁enter s ▁' ▁OR ▁1 ▁-- , ▁the ▁result ing ▁SQL ▁query ▁will ▁be :
+▁It ▁is ▁often ▁used ▁to ▁protect ▁comment ▁forms ▁from ▁automatic ▁ s p a m ▁ bo t s ▁by ▁as k ing ▁the ▁user ▁to ▁type ▁the ▁letter s ▁of ▁a ▁d ist or ted ▁image ▖
+▁The ▁link ▁look s ▁in no c ent ▁to ▁visit or s , ▁but ▁when ▁it ' s ▁click ed , ▁it ▁will ▁execute ▁the ▁JavaScript ▁function ▁" exploit _ code " ▁or ▁any ▁other ▁JavaScript ▁the ▁attacker ▁provides .
+▁A ▁popular ▁ CAPTCHA ▁API ▁is ▁[ re CAPTCHA ]( http :// recaptcha ▖ net / ) ▁which ▁display s ▁two ▁d ist or ted ▁images ▁of ▁words ▁from ▁old ▁ books ▖
+▁ http :// hi ▖ com
+▁You ▁will ▁get ▁two ▁keys ▁from ▁the ▁API , ▁a ▁public ▁and ▁a ▁ private ▁key , ▁which ▁you ▁have ▁to ▁put ▁into ▁your ▁Rails ▁environment ▖
+▁ AND ▁password ▁= ▁? ", ▁entered _ user _ name , ▁entered _ password )▖ first
+▁A lthough ▁some times ▁it ▁is ▁not ▁possible ▁to ▁create ▁a ▁ white list ▁( in ▁a ▁S P A M ▁filter , ▁for ▁example ), ▁ _ p ref er ▁to ▁use ▁ white list ▁approach es _ :
+▁Instead , ▁ _ query ▁the ▁user ' s ▁access ▁right s , ▁too _ :
+▁### ▁B r ute - For c ing ▁ Account s
+▁As ▁you ▁can ▁see , ▁the ▁first ▁part ▁of ▁the ▁array ▁is ▁an ▁SQL ▁f ra g ment ▁with ▁question ▁mark s ▖
+▁### ▁C ross - Site ▁S c ri p ting ▁( XSS )
+▁filename ▁= ▁File ▖ expand _ path ( File ▖ join ( base name , ▁@ file ▖ public _ filename ) )
+▁### ▁G ood ▁ Password s
+▁S im p ly ▁pass ▁a ▁file ▁name ▁like ▁" ▖ ▖ / ▖ ▖ / ▖ ▖ / e t c / pass w d " ▁to ▁ download ▁the ▁server ' s ▁login ▁information ▖
+▁This ▁URL ▁passes ▁the ▁filter ▁because ▁the ▁regular ▁expression ▁matches ▁- ▁the ▁second ▁line , ▁the ▁rest ▁does ▁not ▁matter ▖
+▁INFO : ▁ _ A ▁ CAPTCHA ▁is ▁a ▁c hallenge - response ▁test ▁to ▁determine ▁that ▁the ▁response ▁is ▁not ▁generated ▁by ▁a ▁computer ▖
+▁A ▁list ▁of ▁user ▁names ▁for ▁your ▁web ▁application ▁may ▁be ▁ mis used ▁to ▁br ute - force ▁the ▁corresponding ▁passwords , ▁because ▁most ▁people ▁don ' t ▁use ▁sophisticat ed ▁passwords ▖
+▁This ▁ malicious ▁attack ▁ inject s ▁client - side ▁execut able ▁code ▖
+▁This ▁may ▁work ▁fine ▁in ▁some ▁languages ▖
+▁Instead ▁of ▁passing ▁a ▁string ▁to ▁the ▁conditions ▁option , ▁you ▁can ▁pass ▁an ▁array ▁to ▁ sanitize ▁ tain ted ▁strings ▁like ▁this :
+▁ Remember ▁that ▁every ▁parameter ▁may ▁be ▁changed , ▁no ▁matter ▁how ▁much ▁you ▁h ide ▁or ▁ ob f us c ate ▁it .
+▁So ▁h o pe full y ▁you ▁ encrypted ▁the ▁passwords ▁in ▁the ▁database !
+▁After ▁ activating ▁the ▁account , ▁the ▁activation _ code ▁columns ▁will ▁be ▁set ▁to ▁NULL ▁in ▁the ▁database ▖
+▁In ▁order ▁to ▁m it ig ate ▁such ▁attacks , ▁ _ display ▁a ▁generic ▁error ▁message ▁on ▁ forgot - password ▁pages , ▁too _ ▖
+▁This ▁way ▁the ▁ bo t ▁will ▁be ▁ satisf i ed ▁and ▁move s ▁on ▖
+▁The ▁ attachment _ f u ▁plugin ▁does ▁this ▁in ▁a ▁similar ▁way .
+▁@ project ▁= ▁@ current _ user ▖ projects ▖ find ( params [: id ])
+▁E ve ry one ▁who ▁access ed ▁the ▁b an k ing ▁site ▁through ▁that ▁route r ▁saw ▁the ▁attacker ' s ▁fake ▁web ▁site ▁and ▁ha d ▁their ▁credentials ▁ st ol en .
+▁### ▁ Account ▁H i ja c k ing
+▁Be ▁sure ▁to ▁update ▁your ▁Rails ▁[ to ▁at ▁least ▁ 2▖1 ▖ 1 ]( http :// www ▖ r or security ▖ info / 2008 / 0 9 / 08 / sql - inject ion - issue - in - limit - and - offset - param eter / ) .
+▁T a i l or - ma de ▁T r o ja n s ▁are ▁very ▁ ra re , ▁so ▁far , ▁and ▁the ▁risk ▁is ▁quite ▁ low , ▁but ▁it ▁is ▁certain ly ▁a ▁possibility ▁and ▁an ▁example ▁of ▁how ▁the ▁security ▁of ▁the ▁client ▁host ▁is ▁important , ▁too ▖
+▁The ▁problem ▁with ▁ CAPTCHA s ▁is , ▁they ▁are ▁an no y ing ▖
+▁ ---------------
+▁### ▁ CAPTCHA s
+▁ / ^ https ? : \ / \ / [ ^ \ n ] + $ / i
+▁Intranet ▁and ▁admin ist r ation ▁interface s ▁are ▁popular ▁attack ▁ target s , ▁because ▁they ▁allow ▁privilege d ▁access ▖
+▁ Don ' t ▁write ▁them ▁down , ▁but ▁use ▁the ▁initial ▁letter s ▁of ▁each ▁word ▁in ▁an ▁easy ▁to ▁remember ▁ sentence .
+▁ _ JavaScript ▁can ▁be ▁used ▁to ▁validate ▁user ▁input ▁data , ▁but ▁certain ly ▁not ▁to ▁prevent ▁attacker s ▁from ▁sending ▁ malicious ▁requests ▁with ▁un expect ed ▁values _ ▖
+▁The ▁two ▁d a sh es ▁start ▁a ▁comment ▁ignoring ▁everything ▁after ▁it ▖
+▁WARNING : ▁ _ T e ll ▁Rails ▁not ▁to ▁put ▁passwords ▁in ▁the ▁log ▁files .
+▁As ▁a ▁rule ▁of ▁thumb , ▁ _ no ▁user ▁input ▁data ▁is ▁secure , ▁un til ▁pro ve n ▁otherwise , ▁and ▁every ▁parameter ▁from ▁the ▁user ▁is ▁ potentially ▁manipulate d _ .
+▁In ▁Rails ▁3▖1 ▁you ▁can ▁use ▁the ▁built - in ▁` has _ secure _ password ` ▁method ▁which ▁has ▁similar ▁features .
+▁link _ to ▁" Home page ", ▁@ user ▖ home page
+▁If ▁the ▁victim ▁was ▁logged ▁in ▁to ▁ Google ▁ Mail , ▁the ▁attacker ▁would ▁change ▁the ▁filter s ▁to ▁forward ▁all ▁e - mail s ▁to ▁their ▁e - mail ▁address ▖
+▁If ▁you ▁use ▁a ▁file ▁name , ▁that ▁the ▁user ▁entered , ▁without ▁filter ing , ▁any ▁file ▁can ▁be ▁ download ed :
+▁Application s , ▁such ▁as ▁the ▁[ L ive ▁HTTP ▁Header s ▁ Firefox ▁plugin ]( http :// li ve http headers ▖ m o z dev ▖ org / ), ▁or ▁client - site ▁pro x ies ▁make ▁it ▁easy ▁to ▁change ▁requests .
+▁Because ▁of ▁this , ▁most ▁web ▁applications ▁will ▁display ▁a ▁generic ▁error ▁message ▁" user ▁name ▁or ▁password ▁not ▁correct ", ▁if ▁one ▁of ▁these ▁are ▁not ▁correct ▖
+▁A ▁good ▁password ▁is ▁a ▁long ▁ al ph a numeric ▁combination ▁of ▁mix ed ▁cases ▖
+▁Here ▁are ▁some ▁though t s ▁about ▁this :
+▁By ▁default , ▁Rails ▁log s ▁all ▁requests ▁being ▁made ▁to ▁the ▁web ▁application ▖
+▁This ▁is ▁ nearly ▁as ▁ha rm ful ▁as ▁hijacking ▁the ▁entire ▁account ▖
+▁validates ▁: content , ▁format : ▁ { ▁with : ▁ / ^ Meanwhile $ / , ▁ multiline : ▁true ▁ }
+▁* ▁position ▁the ▁fields ▁off ▁of ▁the ▁ visible ▁are a ▁of ▁the ▁page
+▁As ▁a ▁countermeasure , ▁ _ re view ▁your ▁application ▁logic ▁and ▁eliminate ▁all ▁XSS ▁and ▁CSRF ▁vulnerabilities _ .
+▁ Pro m in ent ▁examples ▁of ▁injection ▁are ▁ cross - site ▁ script ing ▁( XSS ) ▁and ▁SQL ▁injection .
+▁### ▁SQL ▁Injection
+▁This ▁will ▁result ▁in ▁the ▁following ▁SQL ▁query :
+▁ _ If ▁your ▁ Apache ▁ Document R oo t ▁point s ▁to ▁Rails ' ▁ / public ▁directory , ▁do ▁not ▁put ▁file ▁upload s ▁in ▁it _ , ▁store ▁files ▁at ▁least ▁one ▁level ▁down ward s .
+▁After ▁they ▁change ▁it , ▁they ▁will ▁go ▁to ▁the ▁ forgot t en - password ▁page ▁and ▁the ▁( possibl y ▁new ) ▁password ▁will ▁be ▁mail ed ▁to ▁the ▁attacker ' s ▁e - mail ▁address ▖
+▁And ▁ _ require ▁the ▁user ▁to ▁enter ▁the ▁old ▁password ▁when ▁changing ▁it _ .
+▁The ▁following ▁shows ▁a ▁typical ▁database ▁query ▁in ▁Rails ▁to ▁find ▁the ▁first ▁record ▁in ▁the ▁users ▁table ▁which ▁matches ▁the ▁login ▁credentials ▁parameters ▁supplied ▁by ▁the ▁user .
+▁NOTE : ▁ _ W h en ▁sanit i z ing , ▁protect ing ▁or ▁verify ing ▁something , ▁prefer ▁ white list s ▁over ▁blacklist s .
+▁En crypt ing ▁ secrets ▁and ▁passwords ▁in ▁the ▁database ▁will ▁be ▁quite ▁use less , ▁if ▁the ▁log ▁files ▁list ▁them ▁in ▁clear ▁text ▖
+▁* ▁ Don ' t ▁try ▁to ▁correct ▁user ▁input ▁by ▁blacklist s :
+▁** XSS ** ▁If ▁your ▁application ▁re - display s ▁ malicious ▁user ▁input ▁from ▁the ▁extra net , ▁the ▁application ▁will ▁be ▁vulnerable ▁to ▁XSS ▖ ▁User ▁names , ▁comments , ▁ s p a m ▁report s , ▁order ▁addresses ▁are ▁just ▁a ▁few ▁un common ▁examples , ▁where ▁there ▁can ▁be ▁XSS .
+▁The ▁idea ▁of ▁a ▁ n eg a tive ▁ CAPTCHA ▁is ▁not ▁for ▁a ▁user ▁to ▁pro ve ▁that ▁they ▁are ▁ human , ▁but ▁re ve al ▁that ▁a ▁ r o bo t ▁is ▁a ▁ r o bo t .
+▁ SELECT ▁* ▁FROM ▁ projects ▁WHERE ▁name ▁= ▁ '' ▁OR ▁1 ▁-- '
+▁But ▁the ▁input ▁does ▁not ▁necessar ily ▁have ▁to ▁come ▁from ▁input ▁ box es ▁on ▁web ▁site s , ▁it ▁can ▁be ▁in ▁any ▁URL ▁parameter ▁- ▁obvious , ▁hidden ▁or ▁ internal ▖
+▁You ▁can ▁try ▁` sanitize _ sql () ` ▁else where ▖
+▁------------ ---------------
+▁If ▁an ▁attacker ▁know s ▁your ▁user ▁name ▁and ▁you ▁use ▁a ▁we a k ▁password , ▁your ▁account ▁will ▁be ▁easily ▁c rack ed .
+▁And ▁thus ▁it ▁found ▁the ▁first ▁user ▁in ▁the ▁database , ▁returned ▁it ▁and ▁logged ▁them ▁in ▖
+▁ http :// localhost : 30 06 / user / ac t i v ate
+▁And ▁now ▁let ' s ▁ inject ▁another ▁query ▁using ▁the ▁UNION ▁statement :
+▁The ▁idea ▁of ▁ n eg a tive ▁ CAPTCHA s ▁is ▁not ▁to ▁as k ▁a ▁user ▁to ▁ proof ▁that ▁they ▁are ▁ human , ▁but ▁re ve al ▁that ▁a ▁ s p a m ▁ r o bo t ▁is ▁a ▁ bo t .
+▁The ▁common ▁admin ▁interface ▁works ▁like ▁this : ▁it ' s ▁located ▁at ▁ www ▖ example ▖ com / admin , ▁may ▁be ▁access ed ▁only ▁if ▁the ▁admin ▁flag ▁is ▁set ▁in ▁the ▁User ▁model , ▁re - display s ▁user ▁input ▁and ▁allows ▁the ▁admin ▁to ▁delete / add / edit ▁what ever ▁data ▁desired ▖
+▁In ▁this ▁ proof - of - concept ▁attack , ▁the ▁victim ▁would ▁have ▁been ▁ l ur ed ▁to ▁a ▁web ▁site ▁control le d ▁by ▁the ▁attacker ▖
+▁After ▁that ▁you ▁can ▁use ▁the ▁ recaptcha _ tags ▁method ▁in ▁the ▁view , ▁and ▁the ▁verify _ recaptcha ▁method ▁in ▁the ▁controller ▖
+▁ Most ▁passwords ▁are ▁a ▁combination ▁of ▁ dictionary ▁words ▁and ▁ possibl y ▁number s ▖
+▁* ▁In clu de ▁a ▁field ▁with ▁the ▁current ▁UTC ▁time - st amp ▁in ▁it ▁and ▁check ▁it ▁on ▁the ▁server ▖
+▁NOTE : ▁ _ A l most ▁every ▁web ▁application ▁has ▁to ▁deal ▁with ▁ authorization ▁and ▁authentication ▖
+▁As ▁you ▁have ▁already ▁seen ▁above ▁how ▁CSRF ▁works , ▁here ▁are ▁a ▁few ▁examples ▁of ▁what ▁attacker s ▁can ▁do ▁in ▁the ▁Intranet ▁or ▁admin ▁interface .
+▁INFO : ▁ _ A ▁common ▁p it f all ▁in ▁Ruby ' s ▁regular ▁expression s ▁is ▁to ▁match ▁the ▁string ' s ▁beginning ▁and ▁end ▁by ▁ ^ ▁and ▁$ , ▁instead ▁of ▁\ A ▁and ▁\ z .
+▁INFO : ▁ _ In j ec tion ▁is ▁a ▁class ▁of ▁attacks ▁that ▁introduce ▁ malicious ▁code ▁or ▁parameters ▁into ▁a ▁web ▁application ▁in ▁order ▁to ▁run ▁it ▁within ▁its ▁security ▁context ▖
+▁If ▁it ▁ s a id ▁" the ▁user ▁name ▁you ▁entered ▁has ▁not ▁been ▁found ", ▁an ▁attacker ▁could ▁automatically ▁ compile ▁a ▁list ▁of ▁user ▁names .
+▁If ▁it ▁is ▁easy ▁to ▁change ▁the ▁password , ▁the ▁attacker ▁will ▁ hijack ▁the ▁account ▁with ▁a ▁few ▁click s ▖
+▁# ▁content ▁should ▁include ▁a ▁line ▁" Meanwhile " ▁any where ▁in ▁the ▁string
+▁Note , ▁however , ▁that ▁this ▁is ▁not ▁a ▁b ul let - proof ▁solution ▁again st ▁automatic ▁program s , ▁because ▁these ▁program s ▁may ▁change ▁their ▁ IP ▁address ▁exactly ▁as ▁often ▖
+▁When ▁design ing ▁a ▁web ▁application ▁security ▁ concept , ▁you ▁should ▁also ▁think ▁about ▁what ▁will ▁happen ▁if ▁an ▁attacker ▁ got ▁( full ) ▁access ▁to ▁the ▁web ▁server ▖
+▁De pending ▁on ▁your ▁web ▁application , ▁there ▁may ▁be ▁more ▁ways ▁to ▁ hijack ▁the ▁user ' s ▁account ▖
+▁A nother ▁popular ▁attack ▁is ▁to ▁ s p a m ▁your ▁web ▁application , ▁your ▁blog ▁or ▁ forum ▁to ▁pro p a g ate ▁ malicious ▁XSS ▖
+▁The ▁request ▁changed ▁the ▁D N S - settings ▁so ▁that ▁requests ▁to ▁a ▁M ex ic o - base d ▁b an k ing ▁site ▁would ▁be ▁map ped ▁to ▁the ▁attacker ' s ▁site ▖
+▁If ▁the ▁victim ▁was ▁logged ▁into ▁ Google ▁A d s en se , ▁the ▁admin ist r ation ▁interface ▁for ▁ Google ▁a d ve r t is e ment s ▁c amp a ig n s , ▁an ▁attacker ▁could ▁change ▁their ▁credentials ▖  
+▁Note ▁that ▁this ▁is ▁just ▁an ▁example , ▁you ▁should ▁not ▁use ▁well ▁known ▁ ph ra s es ▁like ▁these , ▁as ▁they ▁m ight ▁appear ▁in ▁c rack er ▁di c tion ar ies , ▁too .
+▁Let ' s ▁take ▁the ▁example ▁from ▁above :
+▁This ▁way ▁you ▁don ' t ▁ forget ▁to ▁turn ▁it ▁off ▁for ▁new ly ▁added ▁actions .
+▁Re f er ▁to ▁the ▁Injection ▁section ▁for ▁countermeasure s ▁again st ▁XSS .
+▁base name ▁= ▁File ▖ expand _ path ( File ▖ join ( File ▖ d ir name ( _ _ FIL E _ _ ), ▁' ▖ .
+▁* ▁ Allow ▁& lt ; strong & gt ; ▁instead ▁of ▁remov ing ▁& lt ; script & gt ; ▁again st ▁C ross - Site ▁S c ri p ting ▁( XSS )▖
+▁The ▁attacker s ▁sent ▁a ▁ malicious ▁e - mail , ▁with ▁CSRF ▁in ▁it , ▁to ▁M ex ic an ▁users ▖
+▁### ▁ Regular ▁E x press ion s
+▁Or ▁how ▁about ▁ _ special ▁login ▁credentials _ ▁for ▁the ▁admin ▁interface , ▁other ▁than ▁the ▁one s ▁used ▁for ▁the ▁public ▁part ▁of ▁the ▁application ▖
+▁ _ It ▁is ▁a d v is able ▁to ▁update ▁your ▁p l ug - in s ▁from ▁time ▁to ▁time _ ▖
+▁The ▁most ▁common ▁parameter ▁that ▁a ▁user ▁m ight ▁t amp er ▁with , ▁is ▁the ▁id ▁parameter , ▁as ▁in ▁` http :// www ▖ domain ▖ com / project /1 `, ▁whereas ▁1 ▁is ▁the ▁id ▖
+▁These ▁pages ▁often ▁a d m it ▁that ▁the ▁entered ▁user ▁name ▁or ▁e - mail ▁address ▁has ▁( not ) ▁been ▁found ▖
+▁Injection ▁is ▁very ▁trick y , ▁because ▁the ▁same ▁code ▁or ▁parameter ▁can ▁be ▁ malicious ▁in ▁one ▁context , ▁but ▁total ly ▁ harmless ▁in ▁another ▖
+▁User ▖ find _ by _ activation _ code ( params [: id ])
+▁Having ▁one ▁single ▁place ▁in ▁the ▁admin ▁interface ▁or ▁Intranet , ▁where ▁the ▁input ▁has ▁not ▁been ▁ sanitize d , ▁make s ▁the ▁entire ▁application ▁vulnerable ▖
+▁ Project ▖ where (" name ▁= ▁' # { params [: name ]} ' ")
+▁However , ▁what ▁most ▁web ▁application ▁design ers ▁ n eg le c t , ▁are ▁the ▁ forgot - password ▁pages ▖
+▁#### ▁Un authorize d ▁Read ing
+▁F end ▁them ▁off ▁with ▁more ▁generic ▁error ▁messages ▁and ▁ possibl y ▁require ▁to ▁enter ▁a ▁ CAPTCHA ▖ _
+▁INFO : ▁ _ The ▁most ▁ wide s p read , ▁and ▁one ▁of ▁the ▁most ▁ dev a st ating ▁security ▁vulnerabilities ▁in ▁web ▁applications ▁is ▁XSS ▖
+▁ W h y ▁not ▁be ▁different ▁and ▁make ▁it ▁more ▁difficult ? .
+▁The ▁ sanitize d ▁versions ▁of ▁the ▁variables ▁in ▁the ▁second ▁part ▁of ▁the ▁array ▁replace ▁the ▁question ▁mark s ▖
+▁This ▁make s ▁steal ing ▁an ▁admin ▁cookie ▁from ▁the ▁usual ▁domain , ▁ www ▖ application ▖ com , ▁ im possibl e ▖
+▁INFO : ▁ _ D o ▁you ▁find ▁it ▁hard ▁to ▁remember ▁all ▁your ▁passwords ?
+▁SQL ▁injection ▁attacks ▁a im ▁at ▁in f l u en c ing ▁database ▁queries ▁by ▁ manipulati n g ▁web ▁application ▁parameters ▖
+▁User ▖ first (" login ▁= ▁' # { params [: name ]} ' ▁ AND ▁password ▁= ▁' # { params [: password ]} ' ")
+▁A ▁popular ▁goal ▁of ▁SQL ▁injection ▁attacks ▁is ▁to ▁by pass ▁ authorization ▖
+▁This ▁will ▁simply ▁find ▁the ▁first ▁record ▁in ▁the ▁database , ▁and ▁gra nt s ▁access ▁to ▁this ▁user .
+▁A ▁simple ▁solution ▁again st ▁this , ▁is ▁to ▁ _ check ▁that ▁the ▁request ed ▁file ▁is ▁in ▁the ▁expected ▁directory _ :
+▁Whi te list s ▁are ▁also ▁a ▁good ▁approach ▁again st ▁the ▁ human ▁ factor ▁of ▁for getting ▁something ▁in ▁the ▁blacklist .
+▁### ▁Logging
+▁It ▁also ▁add s ▁an ▁an g le d ▁line , ▁rather ▁than ▁a ▁d ist or ted ▁background ▁and ▁high ▁level s ▁of ▁ w ar p ing ▁on ▁the ▁text ▁as ▁earlier ▁ CAPTCHA s ▁did , ▁because ▁the ▁latter ▁were ▁broken ▖
+▁The ▁Web ▁De ve lo p er ▁To ol bar ▁for ▁ Mo z i ll a ▁ Firefox ▁let s ▁you ▁review ▁and ▁change ▁every ▁form ' s ▁hidden ▁fields ▖
+▁XSS ▁can ▁steal ▁the ▁cookie , ▁ hijack ▁the ▁session , ▁redirect ▁the ▁victim ▁to ▁a ▁fake ▁website , ▁display ▁a d ve r t is e ment s ▁for ▁the ▁benefit ▁of ▁the ▁attacker , ▁change ▁elements ▁on ▁the ▁web ▁site ▁to ▁get ▁confident i al ▁information ▁or ▁install ▁ malicious ▁software ▁through ▁security ▁hole s ▁in ▁the ▁web ▁browser .
+▁M any ▁web ▁applications ▁make ▁it ▁easy ▁to ▁ hijack ▁user ▁account s ▖
+▁So ▁how ▁is ▁this ▁a ▁security ▁ threat ?
+▁The ▁user ▁enter s ▁their ▁login ▁credentials ▁and ▁the ▁web ▁application ▁ tries ▁to ▁find ▁the ▁matching ▁record ▁in ▁the ▁users ▁table ▖
+▁File ▖ expand _ path ( File ▖ join ( File ▖ d ir name ( filename ), ▁' ▖ .
+▁* ▁Use ▁before _ action ▁only : ▁[ ▖▖▖ ] ▁instead ▁of ▁except : ▁[ ▖▖▖ ] ▖
+▁ SELECT ▁id , login ▁AS ▁name , password ▁AS ▁ description , 1, 1, 1 ▁FROM ▁users ▁-- '
+▁More over , ▁you ▁can ▁review ▁your ▁application ▁to ▁find ▁more ▁f la w s ▁like ▁this .
+▁* ▁This ▁will ▁make ▁the ▁attack ▁work : ▁" & lt ; s c & lt ; script & gt ; ri p t & gt ; "▖ g s ub (" & lt ; script & gt ; ", ▁" ")
+▁However , ▁password ▁c rack er ▁di c tion ar ies ▁contain ▁a ▁large ▁number ▁of ▁ today ' s ▁passwords , ▁and ▁they ▁try ▁out ▁all ▁kind s ▁of ▁( al ph a numeric al ) ▁combination s ▖
+▁WARNING : ▁ _ Chang ing ▁a ▁single ▁parameter ▁may ▁give ▁the ▁user ▁un authorize d ▁access ▖
+▁So ▁a rm ed ▁with ▁a ▁list ▁of ▁user ▁names ▁and ▁a ▁ dictionary , ▁an ▁automatic ▁program ▁may ▁find ▁the ▁correct ▁password ▁in ▁a ▁matter ▁of ▁minutes .
+▁* ▁ _ P u t ▁the ▁admin ▁interface ▁to ▁a ▁special ▁sub - domain _ ▁such ▁as ▁admin ▖ application ▖ com ▁and ▁make ▁it ▁a ▁separate ▁application ▁with ▁its ▁own ▁user ▁manage ment ▖
+▁That ▁is ▁an ▁easy ▁way ▁to ▁by pass ▁any ▁JavaScript ▁validations ▖
+▁However , ▁here ▁is ▁the ▁find er ▁from ▁the ▁activation ▁action :
+▁### ▁P ri v ile ge ▁E s c al ation
+▁And ▁thus ▁a ▁URL ▁like ▁this ▁passes ▁the ▁filter ▁without ▁problem s :
+▁ Don ' t ▁be ▁ foo le d ▁by ▁security ▁by ▁ ob f us c ation ▁and ▁JavaScript ▁security ▖
+▁You ▁can ▁ _ filter ▁certain ▁request ▁parameters ▁from ▁your ▁log ▁files _ ▁by ▁ append ing ▁them ▁to ▁` config ▖ filter _ parameters ` ▁in ▁the ▁application ▁configuration ▖
+▁Also , ▁the ▁second ▁query ▁re name s ▁some ▁columns ▁with ▁the ▁AS ▁statement ▁so ▁that ▁the ▁web ▁application ▁display s ▁the ▁values ▁from ▁the ▁user ▁table ▖
+▁Then , ▁you ▁can ▁either ▁ignore ▁the ▁post ▁or ▁return ▁a ▁ po s i tive ▁result , ▁but ▁not ▁saving ▁the ▁post ▁to ▁the ▁database ▖
+▁@ project ▁= ▁ Project ▖ find ( params [: id ])
+▁However , ▁ _ in ▁Ruby ▁ ^ ▁and ▁$ ▁match ▁the ▁** line ** ▁beginning ▁and ▁line ▁end _ ▖
+▁User ▁ Management
+▁Injection
+▁javascript : exploit _ code () ; /*
+▁The ▁L ive ▁ Http ▁Header s ▁plugin ▁for ▁ Mo z i ll a ▁ Firefox ▁log s ▁every ▁request ▁and ▁may ▁ r epeat ▁and ▁change ▁them ▖
+▁N eg a tive ▁ CAPTCHA s ▁take ▁advantage ▁of ▁that ▁and ▁include ▁a ▁" h one y po t " ▁field ▁in ▁the ▁form ▁which ▁will ▁be ▁hidden ▁from ▁the ▁ human ▁user ▁by ▁CSS ▁or ▁JavaScript .
+▁On ▁that ▁site ▁is ▁a ▁ craft ed ▁ IM G - tag ▁which ▁results ▁in ▁a ▁HTTP ▁GET ▁request ▁that ▁changes ▁the ▁filter ▁settings ▁of ▁ Google ▁ Mail ▖
+▁E x a m in e ▁request ▖ remote _ ip ▁to ▁find ▁out ▁about ▁the ▁user ' s ▁ IP ▁address ▖
+▁This ▁allows ▁an ▁attacker ▁to ▁ compile ▁a ▁list ▁of ▁user ▁names ▁and ▁br ute - force ▁the ▁account s .
+▁D ur ing ▁the ▁second ▁h al f ▁of ▁200 7 , ▁there ▁were ▁ 88 ▁vulnerabilities ▁report ed ▁in ▁ Mo z i ll a ▁browsers , ▁ 22 ▁in ▁ Safari , ▁ 18 ▁in ▁ IE , ▁and ▁ 12 ▁in ▁O pe ra ▖
+▁But ▁log ▁files ▁can ▁be ▁a ▁h ug e ▁security ▁issue , ▁as ▁they ▁may ▁contain ▁login ▁credentials , ▁ credit ▁ card ▁number s ▁e t ▁c eter a ▖
+▁It ▁turn s ▁out ▁that ▁most ▁of ▁the ▁passwords ▁are ▁quite ▁easy ▁to ▁c rack ▖
+▁Ju st ▁as ▁you ▁have ▁to ▁filter ▁file ▁names ▁for ▁upload s , ▁you ▁have ▁to ▁do ▁so ▁for ▁ download s ▖
+▁A nother ▁( additional ) ▁approach ▁is ▁to ▁store ▁the ▁file ▁names ▁in ▁the ▁database ▁and ▁name ▁the ▁files ▁on ▁the ▁di s k ▁after ▁the ▁id s ▁in ▁the ▁database ▖
+▁If ▁you ▁do ▁need ▁to ▁use ▁ ^ ▁and ▁$ ▁instead ▁of ▁\ A ▁and ▁\ z ▁( which ▁is ▁ ra re ), ▁you ▁can ▁set ▁the ▁: multiline ▁option ▁to ▁true , ▁like ▁so :
+▁For ▁ _ counter me a sure s ▁again st ▁CSRF ▁in ▁admin ist r ation ▁interface s ▁and ▁Intranet ▁applications , ▁refer ▁to ▁the ▁countermeasure s ▁in ▁the ▁CSRF ▁section _ .
+▁There ▁are ▁a ▁number ▁of ▁authentication ▁p l ug - in s ▁for ▁Rails ▁available ▖
+▁Instead ▁of ▁roll ing ▁your ▁own , ▁it ▁is ▁a d v is able ▁to ▁use ▁common ▁p l ug - in s ▖
+▁* ▁In clu de ▁more ▁than ▁one ▁h one y po t ▁field ▁of ▁all ▁types , ▁including ▁submission ▁button s
+▁As ▁this ▁is ▁quite ▁hard ▁to ▁remember , ▁it ▁is ▁a d v is able ▁to ▁enter ▁only ▁the ▁ _ first ▁letter s ▁of ▁a ▁ sentence ▁that ▁you ▁can ▁easily ▁remember _ ▖
+▁ Remember ▁that ▁the ▁user ▁may ▁inter ce p t ▁any ▁traffic ▖
+▁It ▁is ▁inter est ing ▁that ▁only ▁4 % ▁of ▁these ▁passwords ▁were ▁ dictionary ▁words ▁and ▁the ▁great ▁major ity ▁is ▁actually ▁ al ph a numeric ▖
+▁So ▁ _ n eg a tive ▁ CAPTCHA s ▁m ight ▁not ▁be ▁good ▁to ▁protect ▁login ▁forms _ .
+▁Or ▁if ▁the ▁change - password ▁form ▁is ▁vulnerable ▁to ▁CSRF , ▁the ▁attacker ▁will ▁be ▁able ▁to ▁change ▁the ▁victim ' s ▁password ▁by ▁ l ur ing ▁them ▁to ▁a ▁web ▁page ▁where ▁there ▁is ▁a ▁ craft ed ▁ IM G - tag ▁which ▁does ▁the ▁CSRF ▖
+▁Intranet ▁and ▁ Admin ▁ Security
+▁You ▁can ▁find ▁more ▁sophisticat ed ▁ n eg a tive ▁ CAPTCHA s ▁in ▁N ed ▁B at ch el d er ' s ▁[ blog ▁post ]( http :// n ed batch el d er ▖ com / text / s to p bo t s ▖ html ) :
+▁The ▁20 ▁most ▁common ▁passwords ▁are :
+▁Additional ly , ▁some ▁ visual ly ▁ im p a ir ed ▁users ▁have ▁found ▁certain ▁kind s ▁of ▁d ist or ted ▁ CAPTCHA s ▁difficult ▁to ▁read ▖
+▁The ▁most ▁simple ▁ n eg a tive ▁ CAPTCHA ▁is ▁one ▁hidden ▁h one y po t ▁field ▖
+▁As ▁a ▁countermeasure , ▁ _ make ▁change - password ▁forms ▁ safe ▁again st ▁CSRF _ , ▁of ▁course ▖
+▁A ▁context ▁can ▁be ▁a ▁ script ing , ▁query ▁or ▁programming ▁language , ▁the ▁ s hell ▁or ▁a ▁Ruby / Rails ▁method ▖
+▁However , ▁an ▁attacker ▁may ▁ possibl y ▁by pass ▁this ▁check ▁with ▁SQL ▁injection ▖
+▁#### ▁Co un term ea sure s
+▁An ▁attacker ▁can ▁use ▁it ▁to ▁read ▁arbitrar y ▁data ▁from ▁the ▁database ▖
+▁If ▁an ▁attacker ▁enter s ▁' ▁OR ▁'1' =' 1 ▁as ▁the ▁name , ▁and ▁' ▁OR ▁' 2 ' > ' 1 ▁as ▁the ▁password , ▁the ▁result ing ▁SQL ▁query ▁will ▁be :
+▁ Thin k ▁of ▁a ▁situation ▁where ▁an ▁attacker ▁has ▁ st ol en ▁a ▁user ' s ▁session ▁cookie ▁and ▁thus ▁may ▁co - use ▁the ▁application ▖
+▁If ▁some one ▁request ed ▁an ▁URL ▁like ▁these , ▁they ▁would ▁be ▁logged ▁in ▁as ▁the ▁first ▁ activated ▁user ▁found ▁in ▁the ▁database ▁( and ▁chance s ▁are ▁that ▁this ▁is ▁the ▁administrator ) :
+▁As ▁a ▁countermeasure ▁ _ require ▁the ▁user ▁to ▁enter ▁the ▁password ▁when ▁changing ▁the ▁e - mail ▁address , ▁too _ .
+▁This ▁is ▁because ▁the ▁ condition ▁is ▁true ▁for ▁all ▁records .
+▁More over , ▁you ▁can ▁ _ require ▁to ▁enter ▁a ▁ CAPTCHA ▁after ▁a ▁number ▁of ▁failed ▁login s ▁from ▁a ▁certain ▁ IP ▁address _ ▖
+▁This ▁is ▁also ▁a ▁good ▁approach ▁to ▁avoid ▁possible ▁code ▁in ▁an ▁upload ed ▁file ▁to ▁be ▁executed ▖
+▁And ▁there ▁are ▁even ▁client - side ▁pro x ies ▁that ▁allow ▁you ▁to ▁inter ce p t ▁any ▁request ▁and ▁response ▁from ▁and ▁to ▁the ▁ Internet .
+▁send _ file (' / var / www / upload s / ' ▁+ ▁params [: filename ])
+▁A ▁few ▁ additional ▁pre c a u tion s ▁can ▁make ▁your ▁application ▁even ▁more ▁secure .
+▁The ▁result ▁won ' t ▁be ▁a ▁list ▁of ▁ projects ▁( because ▁there ▁is ▁no ▁project ▁with ▁an ▁empty ▁name ), ▁but ▁a ▁list ▁of ▁user ▁names ▁and ▁their ▁password ▖
+▁However , ▁the ▁attacker ▁may ▁also ▁take ▁over ▁the ▁account ▁by ▁changing ▁the ▁e - mail ▁address ▖
+▁ _ Make ▁it ▁a ▁ha bit ▁to ▁think ▁about ▁the ▁security ▁con sequence s ▁when ▁using ▁an ▁external ▁string ▁in ▁SQL _ .
+▁Note ▁that ▁this ▁protect s ▁you ▁only ▁from ▁automatic ▁ bo t s , ▁ target ed ▁tailor - ma de ▁ bo t s ▁cannot ▁be ▁stop ped ▁by ▁this ▖
+▁---------
+▁However , ▁it ▁raise s ▁the ▁bar ri er ▁of ▁an ▁attack .
+▁If ▁it ▁is ▁too ▁far ▁in ▁the ▁ past , ▁or ▁if ▁it ▁is ▁in ▁the ▁future , ▁the ▁form ▁is ▁invalid .
+▁De pending ▁on ▁your ▁web ▁application , ▁there ▁will ▁be ▁many ▁more ▁parameters ▁the ▁user ▁can ▁t amp er ▁with ▖
+▁For ▁example , ▁as ▁in ▁a ▁CSRF ▁ vulnerabilit y ▁in ▁[ Google ▁ Mail ]( http :// www ▖ g n u c it ize n ▖ org / blog / google - g mail - e - mail - hijack - tech n i q ue / )▖
+▁There , ▁you ▁will ▁most ▁likely ▁do ▁something ▁like ▁this :
+▁ http :// localhost : 30 06 / user / ac t i v ate ? id =
+▁Model ▖ where ( login : ▁entered _ user _ name , ▁password : ▁entered _ password )▖ first
+▁E ve ry ▁new ▁user ▁get s ▁an ▁activation ▁code ▁to ▁activate ▁their ▁account ▁when ▁they ▁get ▁an ▁e - mail ▁with ▁a ▁link ▁in ▁it ▖
+▁ Most ▁ bo t s ▁are ▁really ▁d um b , ▁they ▁c raw l ▁the ▁web ▁and ▁put ▁their ▁ s p a m ▁into ▁every ▁form ' s ▁field ▁they ▁can ▁find ▖
+▁password 1, ▁a b c 123 , ▁my space 1, ▁password , ▁b link 18 2, ▁ q w er t y 1, ▁** ** you , ▁ 123 a b c , ▁base b all 1, ▁ foot b all 1, ▁ 12345 6 , ▁so cc er , ▁m on key 1, ▁live r po ol 1, ▁p r ince s s 1, ▁ j or d an 23 , ▁ s li p k not 1, ▁ super man 1, ▁i lo ve you 1, ▁and ▁m on key .
+▁Ruby ▁on ▁Rails ▁has ▁a ▁built - in ▁filter ▁for ▁special ▁SQL ▁characters , ▁which ▁will ▁escape ▁' ▁ , ▁" ▁ , ▁NULL ▁character ▁and ▁line ▁break s ▖
+▁#### ▁ Password s
+▁This ▁is ▁oppos ed ▁to ▁a ▁ white list ▁which ▁list s ▁the ▁good ▁e - mail ▁addresses , ▁public ▁actions , ▁good ▁HTML ▁tags ▁and ▁so ▁on ▖
+▁As ▁a ▁b on us , ▁using ▁re CAPTCHA ▁help s ▁to ▁di git ize ▁old ▁ books ▖
+▁Ruby ▁uses ▁a ▁slightly ▁different ▁approach ▁than ▁many ▁other ▁languages ▁to ▁match ▁the ▁end ▁and ▁the ▁beginning ▁of ▁a ▁string ▖
+▁[ Re CAPTCHA ]( https :// github ▖ com / a m be th ia / recaptcha / ) ▁is ▁also ▁a ▁Rails ▁p l ug - in ▁with ▁the ▁same ▁name ▁as ▁the ▁API .
+▁S ince ▁this ▁is ▁a ▁f r equ ent ▁mistake , ▁the ▁format ▁validator ▁( validates _ format _ of ) ▁now ▁raise s ▁an ▁exception ▁if ▁the ▁provided ▁regular ▁expression ▁start s ▁with ▁ ^ ▁or ▁end s ▁with ▁$ ▖
+▁The ▁UNION ▁statement ▁ connect s ▁two ▁SQL ▁queries ▁and ▁returns ▁the ▁data ▁in ▁one ▁set ▖
+▁It ▁will ▁be ▁available ▁in ▁params ▁in ▁the ▁controller ▖
+▁#### ▁E - Mail
+▁Now ▁ im a g in e ▁we ▁ha d ▁a ▁view ▁that ▁show ed ▁the ▁URL ▁like ▁this :
+▁Model ▖ where (" login ▁= ▁?
+▁The ▁most ▁common ▁entry ▁point s ▁are ▁message ▁posts , ▁user ▁comments , ▁and ▁ guest ▁ books , ▁but ▁project ▁title s , ▁document ▁names ▁and ▁search ▁result ▁pages ▁have ▁also ▁been ▁vulnerable ▁- ▁just ▁about ▁every where ▁where ▁the ▁user ▁can ▁input ▁data ▖
+▁### ▁File ▁D own load s
+▁This ▁is ▁possible ▁because ▁on ▁some ▁server s , ▁this ▁way ▁the ▁parameter ▁id , ▁as ▁in ▁params [: id ] , ▁would ▁be ▁nil ▖
+▁These ▁parameters ▁will ▁be ▁ marked ▁[ FIL TE RE D ] ▁in ▁the ▁log .
+▁Here ▁are ▁some ▁idea s ▁how ▁to ▁h ide ▁h one y po t ▁fields ▁by ▁JavaScript ▁and / or ▁CSS :
+▁INFO : ▁ _ T hanks ▁to ▁c l ever ▁methods , ▁this ▁is ▁hard ly ▁a ▁problem ▁in ▁most ▁Rails ▁applications ▖

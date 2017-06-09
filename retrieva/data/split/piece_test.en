@@ -1,0 +1,300 @@
+▁This ▁guide ▁cover s ▁the ▁configuration ▁and ▁initialization ▁features ▁available ▁to ▁Rails ▁applications .
+▁* ▁How ▁to ▁manage ▁users : ▁Logging ▁in ▁and ▁out ▁and ▁attack ▁methods ▁on ▁all ▁layer s .
+▁The ▁popular ▁ Apache ▁web ▁server ▁has ▁an ▁option ▁called ▁ Document R oo t ▖
+▁NOTE : ▁ _ Sessions ▁that ▁ never ▁ expire ▁extend ▁the ▁time - f ra me ▁for ▁attacks ▁such ▁as ▁ cross - site ▁request ▁ forgery ▁( CSRF ), ▁session ▁hijacking ▁and ▁session ▁fix ation .
+▁Provide ▁the ▁user ▁with ▁a ▁ _ log - out ▁button _ ▁in ▁the ▁web ▁application , ▁and ▁ _ make ▁it ▁pro m in ent _ .
+▁This ▁is ▁a ▁good ▁countermeasure ▁again st ▁session ▁hijacking , ▁as ▁well ▖
+▁The ▁World ▁Wi de ▁Web ▁C on s or t i um ▁( W 3 C ) ▁provides ▁a ▁check list ▁for ▁ ch oo s ing ▁HTTP ▁GET ▁or ▁POST :
+▁return ▁false ; "> To ▁the ▁ harmless ▁ s ur ve y </ a >
+▁* ▁The ▁web ▁application ▁at ▁ www ▖ web app ▖ com ▁verifie s ▁the ▁user ▁information ▁in ▁the ▁corresponding ▁session ▁hash ▁and ▁destroy s ▁the ▁project ▁with ▁the ▁ ID ▁1▖
+▁< a ▁ href =" http :// www ▖ harmless ▖ com / " ▁on click ="
+▁When ever ▁the ▁user ▁is ▁allow ed ▁to ▁pass ▁( part s ▁of ) ▁the ▁URL ▁for ▁redirect ion , ▁it ▁is ▁ possibl y ▁vulnerable ▖
+▁``` ruby
+▁ _ The se ▁m ight ▁change ▁over ▁the ▁course ▁of ▁a ▁session _ , ▁so ▁these ▁users ▁will ▁not ▁be ▁able ▁to ▁use ▁your ▁application , ▁or ▁only ▁in ▁a ▁ limited ▁way .
+▁* ▁A ▁user ▁receive s ▁ credit s , ▁the ▁amount ▁is ▁store d ▁in ▁a ▁session ▁( which ▁is ▁a ▁ bad ▁idea ▁any way , ▁but ▁we ' ll ▁do ▁this ▁for ▁ demo n str ation ▁purposes ) .
+▁The ▁random ▁string ▁is ▁the ▁current ▁time , ▁a ▁random ▁number ▁between ▁0 ▁and ▁1, ▁the ▁process ▁id ▁number ▁of ▁the ▁Ruby ▁interpret er ▁( also ▁basic ally ▁a ▁random ▁number ) ▁and ▁a ▁constant ▁string ▖
+▁The ▁HTTP ▁protocol ▁basic ally ▁provides ▁two ▁main ▁types ▁of ▁requests ▁- ▁GET ▁and ▁POST ▁( and ▁more , ▁but ▁they ▁are ▁not ▁supported ▁by ▁most ▁browsers )▖
+▁In ▁a ▁redirect ion ▁URL , ▁an ▁attacker ▁could ▁redirect ▁to ▁this ▁URL ▁with ▁the ▁ malicious ▁code ▁in ▁it ▖
+▁< img ▁src =" http :// www ▖ harmless ▖ com / img " ▁ width =" 400 " ▁ height =" 400 " ▁on m ous e over =" ▖▖▖"
+▁TIP : ▁ _ A nother ▁sort ▁of ▁attack ▁you ▁have ▁to ▁be ▁ aware ▁of ▁when ▁using ▁` CookieStore ` ▁is ▁the ▁re play ▁attack .
+▁* ▁The ▁attacker ▁ l ure s ▁the ▁victim ▁to ▁the ▁in f ec ted ▁page ▁with ▁the ▁JavaScript ▁code ▖
+▁In tr o duction
+▁In ▁either ▁case ▁the ▁browser ▁will ▁automatically ▁send ▁along ▁the ▁cookie ▁on ▁every ▁request ▁to ▁a ▁domain , ▁if ▁it ▁can ▁find ▁a ▁cookie ▁for ▁that ▁domain ▖
+▁The ▁solution ▁to ▁this ▁is ▁best ▁to ▁ _ process ▁ media ▁files ▁a synchronous ly _ : ▁ Save ▁the ▁ media ▁file ▁and ▁ s ch ed ul e ▁a ▁process ing ▁request ▁in ▁the ▁database ▖
+▁For ▁the ▁web ▁application ▁ builder ▁this ▁means ▁to ▁ _ provide ▁a ▁secure ▁connection ▁over ▁SSL _ ▖
+▁### ▁ Session ▁id
+▁In ▁general ▁there ▁is ▁no ▁such ▁thing ▁as ▁p l ug - n - play ▁security ▖
+▁And ▁with ▁a ▁client - side ▁session ▁ storage , ▁the ▁user ▁can ▁read ▁the ▁data .
+▁Or ▁an ▁attacker ▁m ight ▁be ▁able ▁to ▁install ▁a ▁T r o ja n ▁h or se ▁program ▁or ▁un s ol ic it ed ▁e - mail ▁sending ▁software , ▁a im ▁at ▁f in an cial ▁ en ri ch ment ▁or ▁cause ▁br and ▁name ▁d a m age ▁by ▁modify ing ▁ com p any ▁resources ▖
+▁A ▁ w i re less ▁ LA N ▁can ▁be ▁an ▁example ▁of ▁such ▁a ▁ net work ▖
+▁def ▁ legacy
+▁f ▖ style ▖ display ▁= ▁' none ' ;
+▁** U se ▁POST ▁if : **
+▁# ▁Fin ally , ▁replace ▁all ▁non ▁ al ph a numeric , ▁ underscore
+▁A ▁significant ▁di s ad v an tag e ▁of ▁ synchronous ▁process ing ▁of ▁file ▁upload s ▁( as ▁the ▁ attachment _ f u ▁plugin ▁may ▁do ▁with ▁images ), ▁is ▁its ▁ _ vulnerabilit y ▁to ▁d en i al - of - service ▁attacks _ ▖
+▁To ▁protect ▁again st ▁all ▁other ▁for g ed ▁requests , ▁we ▁introduce ▁a ▁ _ require d ▁security ▁token _ ▁that ▁our ▁site ▁know s ▁but ▁other ▁site s ▁don ' t ▁know ▖
+▁To ▁prevent ▁session ▁hash ▁t amp er ing , ▁a ▁digest ▁is ▁calculat ed ▁from ▁the ▁session ▁with ▁a ▁server - side ▁secret ▁and ▁inserted ▁into ▁the ▁end ▁of ▁the ▁cookie .
+▁In ▁Rails ▁3▖1 ▁and ▁later , ▁this ▁could ▁be ▁accomplish ed ▁by ▁always ▁for c ing ▁SSL ▁connection ▁in ▁your ▁application ▁config ▁file :
+▁* ▁By ▁view ing ▁the ▁post , ▁the ▁browser ▁find s ▁an ▁image ▁tag ▖
+▁So ▁if ▁the ▁last ▁user ▁did n ' t ▁log ▁out ▁of ▁a ▁web ▁application , ▁you ▁would ▁be ▁able ▁to ▁use ▁it ▁as ▁this ▁user ▖
+▁It ▁will ▁load ▁an ▁existing ▁session ▁if ▁the ▁user ▁has ▁already ▁used ▁the ▁application .
+▁H ence , ▁the ▁cookie ▁serve s ▁as ▁temporary ▁authentication ▁for ▁the ▁web ▁application ▖
+▁config ▖ force _ ssl ▁= ▁true
+▁The ▁section ▁about ▁session ▁fix ation ▁introduce d ▁the ▁problem ▁of ▁maintain ed ▁sessions ▖
+▁In j ec ting ▁the ▁JavaScript ▁code ▁into ▁the ▁application ▁by ▁XSS ▁accomplish es ▁this ▁attack ▖
+▁ ---------------- ---------------- ---------------- ---------------- ----------------
+▁The ▁above ▁method ▁can ▁be ▁placed ▁in ▁the ▁` Application Controller ` ▁and ▁will ▁be ▁called ▁when ▁a ▁CSRF ▁token ▁is ▁not ▁present ▁or ▁is ▁in correct ▁on ▁a ▁non - GET ▁request .
+▁### ▁ Session ▁Fix ation ▁- ▁Co un term ea sure s
+▁The ▁server ▁retrieve s ▁the ▁session ▁hash ▁from ▁the ▁cookie ▁and ▁eliminate s ▁the ▁need ▁for ▁a ▁session ▁id ▖
+▁#### ▁S el f - contain ed ▁XSS
+▁def ▁ sanitize _ filename ( filename )
+▁XSS ▁gives ▁the ▁attacker ▁access ▁to ▁all ▁elements ▁on ▁a ▁page , ▁so ▁they ▁can ▁read ▁the ▁CSRF ▁security ▁token ▁from ▁a ▁form ▁or ▁directly ▁submit ▁the ▁form ▖
+▁This ▁ man u al ▁describe s ▁common ▁security ▁problem s ▁in ▁web ▁applications ▁and ▁how ▁to ▁avoid ▁them ▁with ▁Rails .
+▁* ▁ _ C ri t ical ▁data ▁should ▁not ▁be ▁store d ▁in ▁session _ ▖
+▁The ▁most ▁obvious ▁attack ▁would ▁be ▁to ▁redirect ▁users ▁to ▁a ▁fake ▁web ▁application ▁which ▁look s ▁and ▁feel s ▁exactly ▁as ▁the ▁original ▁one ▖
+▁Read ▁the ▁upgrade ▁documentation ▁for ▁more ▁information .
+▁This ▁will ▁eliminate ▁ sy n ch r on i z ation ▁ head a ch es ▁and ▁it ▁won ' t ▁fill ▁up ▁your ▁session ▁ storage ▁ space ▁( de pending ▁on ▁what ▁session ▁ storage ▁you ▁ ch o se , ▁see ▁below ) .
+▁ / \ A ▖ * ( \ \ | \ / ) / , ▁ ''
+▁f ▖ submit () ;
+▁In ▁fact ▁one ▁framework ▁is ▁not ▁more ▁secure ▁than ▁another : ▁If ▁you ▁use ▁it ▁correctly , ▁you ▁will ▁be ▁able ▁to ▁build ▁secure ▁app s ▁with ▁many ▁framework s ▖
+▁Use ▁this ▁line ▁in ▁the ▁ s w eep ▁method ▁above :
+▁This ▁example ▁is ▁a ▁ Base 64 ▁ en code d ▁JavaScript ▁which ▁display s ▁a ▁simple ▁message ▁ box ▖
+▁Some ▁of ▁them ▁also ▁help ▁you ▁with ▁ sec ur ing ▁the ▁web ▁application ▖
+▁In ▁an ▁un encrypted ▁ w i re less ▁ LA N ▁it ▁is ▁es pecially ▁easy ▁to ▁list en ▁to ▁the ▁traffic ▁of ▁all ▁ connect ed ▁clients ▖
+▁end
+▁Such ▁ properties ▁could ▁be ▁the ▁remote ▁ IP ▁address ▁or ▁the ▁user ▁a g ent ▁( the ▁web ▁browser ▁name ), ▁though ▁the ▁latter ▁is ▁less ▁user - specific ▖
+▁end
+▁So ▁ _ d on ' t ▁use ▁a ▁tri via l ▁secret , ▁i ▖ e ▖ ▁a ▁word ▁from ▁a ▁ dictionary , ▁or ▁one ▁which ▁is ▁short er ▁than ▁30 ▁characters _ .
+▁* ▁ _ D o ▁not ▁store ▁large ▁objects ▁in ▁a ▁session _ ▖
+▁Rails ▁will ▁create ▁a ▁new ▁session ▁automatically ▁if ▁a ▁new ▁user ▁access es ▁the ▁application ▖
+▁ Security ▁depend s ▁on ▁the ▁people ▁using ▁the ▁framework , ▁and ▁some times ▁on ▁the ▁development ▁method ▖
+▁Now ▁you ▁can ▁delete ▁sessions ▁that ▁were ▁created ▁a ▁long ▁time ▁ ago ▖
+▁One ▁possibility ▁is ▁to ▁set ▁the ▁ ex p ir y ▁time - st amp ▁of ▁the ▁cookie ▁with ▁the ▁session ▁id ▖
+▁This ▁attack ▁focus es ▁on ▁fix ing ▁a ▁user ' s ▁session ▁id ▁known ▁to ▁the ▁attacker , ▁and ▁for c ing ▁the ▁user ' s ▁browser ▁into ▁using ▁this ▁id ▖
+▁------------ -------- -
+▁* ▁B ob ▁b row s es ▁a ▁message ▁ board ▁and ▁views ▁a ▁post ▁from ▁a ▁ha c k er ▁where ▁there ▁is ▁a ▁ craft ed ▁HTML ▁image ▁element ▖
+▁This ▁attack ▁method ▁works ▁by ▁including ▁ malicious ▁code ▁or ▁a ▁link ▁in ▁a ▁page ▁that ▁access es ▁a ▁web ▁application ▁that ▁the ▁user ▁is ▁believe d ▁to ▁have ▁ authenticated ▖
+▁redirect _ to ( params ▖ update ( action : ' main ') )
+▁### ▁Re play ▁A tt ac k s ▁for ▁ CookieStore ▁Sessions
+▁### ▁E x ec u table ▁Code ▁in ▁File ▁ Upload s
+▁* ▁What ▁you ▁have ▁to ▁pa y ▁a tt en tion ▁to ▁when ▁working ▁with ▁files ▁or ▁providing ▁an ▁admin ist r ation ▁interface .
+▁However ▁the ▁client ▁can ▁edit ▁cookies ▁that ▁are ▁store d ▁in ▁the ▁web ▁browser ▁so ▁ ex p ir ing ▁sessions ▁on ▁the ▁server ▁is ▁ safe r ▖
+▁Note ▁that ▁ _ cross - site ▁ script ing ▁( XSS ) ▁vulnerabilities ▁by pass ▁all ▁CSRF ▁ protection s _ ▖
+▁* ▁How ▁just ▁visit ing ▁a ▁site ▁can ▁be ▁a ▁security ▁problem ▁( with ▁CSRF ) .
+▁Call ▁` Session ▖ s w eep (" 20 ▁minutes ") ` ▁to ▁ expire ▁sessions ▁that ▁were ▁used ▁longer ▁than ▁20 ▁minutes ▁ ago .
+▁To ▁date ▁M D 5 ▁is ▁un com p r o mis ed , ▁but ▁there ▁have ▁been ▁co ll is ion s , ▁so ▁it ▁is ▁the or e tic ally ▁possible ▁to ▁create ▁another ▁input ▁text ▁with ▁the ▁same ▁hash ▁value ▖
+▁### ▁ Session ▁H i ja c k ing
+▁S to r ing ▁non ce s ▁in ▁a ▁database ▁table ▁would ▁def e at ▁the ▁entire ▁purpose ▁of ▁ CookieStore ▁( a v o id ing ▁access ing ▁the ▁database ) .
+▁### ▁ Session ▁S to r age
+▁secret _ key _ base : ▁4 92 f ▖ ▖ .
+▁An ▁attacker ▁can ▁ synchronous ly ▁start ▁image ▁file ▁upload s ▁from ▁many ▁computer s ▁which ▁increase s ▁the ▁server ▁load ▁and ▁may ▁eventual ly ▁c ra sh ▁or ▁ st all ▁the ▁server .
+▁This ▁is ▁the ▁ home ▁directory ▁of ▁the ▁web ▁site , ▁everything ▁in ▁this ▁directory ▁ tree ▁will ▁be ▁served ▁by ▁the ▁web ▁server ▖
+▁NOTE : ▁ _ HTTP ▁is ▁a ▁state less ▁protocol ▖
+▁This ▁could ▁be ▁the ▁contents ▁of ▁a ▁ sh o p p ing ▁b as k e t ▁or ▁the ▁user ▁id ▁of ▁the ▁current ly ▁logged ▁in ▁user ▖
+▁ _ A nd ▁if ▁you ▁redirect ▁to ▁an ▁URL , ▁check ▁it ▁with ▁a ▁ white list ▁or ▁a ▁regular ▁expression _ .
+▁It ▁is ▁un s us p ic i ous , ▁because ▁the ▁link ▁start s ▁with ▁the ▁URL ▁to ▁the ▁web ▁application ▁and ▁the ▁URL ▁to ▁the ▁ malicious ▁site ▁is ▁hidden ▁in ▁the ▁redirect ion ▁parameter : ▁ http :// www ▖ example ▖ com / site / redirect ? to = ▁ www ▖ attacker ▖ com ▖
+▁time ▁= ▁time ▖ split ▖ inject ▁ { ▁| count , ▁ unit | ▁count ▖ to _ i ▖ send ( unit ) ▁ }
+▁ Example s ▁for ▁this ▁are ▁P H P ▁and ▁C G I ▁files ▖
+▁Read ▁more ▁about ▁this ▁so - called ▁session ▁fix ation ▁later .
+▁Here ▁is ▁an ▁example : ▁`< script > document ▖ cookie =" _ session _ id = 16 d 5 b 78 abb 28 e 3 d 6 2 06 b 60 f 22 a 0 3 c 8 d 9 " ; </ script >` ▖
+▁* ▁All ▁countermeasure s ▁ _ that ▁are ▁highlight ed _ .
+▁* ▁S n if f ▁the ▁cookie ▁in ▁an ▁in secure ▁ net work ▖
+▁delete _ all ▁" updated _ at ▁< ▁' # { time ▖ ago ▖ to _ s (: db )} ' "
+▁* ▁The ▁client ▁can ▁see ▁everything ▁you ▁store ▁in ▁a ▁session , ▁because ▁it ▁is ▁store d ▁in ▁clear - text ▁( actual ly ▁ Base 64 - en code d , ▁so ▁not ▁ encrypted )▖
+▁This ▁is ▁called ▁session ▁fix ation .
+▁With ▁server - side ▁session ▁ storage s ▁you ▁can ▁clear ▁out ▁the ▁sessions , ▁but ▁with ▁client - side ▁ storage s , ▁this ▁is ▁hard ▁to ▁m it ig ate .
+▁If ▁you ▁are ▁using ▁a ▁different ▁cookie ▁store ▁than ▁the ▁session ▁for ▁this ▁information , ▁you ▁must ▁handle ▁what ▁to ▁do ▁with ▁it ▁yourself :
+▁test :
+▁this ▖ parent N ode ▖ append C hi ld ( f ) ;
+▁In ▁this ▁case , ▁the ▁cookies ▁will ▁not ▁be ▁clear ed ▁and ▁the ▁out ▁of ▁the ▁ box ▁CSRF ▁ protection ▁will ▁not ▁be ▁effective ▖
+▁ Session ▁fix ation ]( images / session _ fi x ation ▖ png )
+▁```
+▁NOTE : ▁ _ Make ▁sure ▁file ▁upload s ▁don ' t ▁overwrit e ▁important ▁files , ▁and ▁process ▁ media ▁files ▁a synchronous ly .
+▁By ▁view ing ▁the ▁page , ▁the ▁victim ' s ▁browser ▁will ▁change ▁the ▁session ▁id ▁to ▁the ▁t rap ▁session ▁id .
+▁An ▁attacker ▁maintain ing ▁a ▁session ▁every ▁f ive ▁minutes ▁can ▁keep ▁the ▁session ▁ al ive ▁for ever , ▁a lthough ▁you ▁are ▁ ex p ir ing ▁sessions ▖
+▁Rails ▁2 ▁introduce d ▁a ▁new ▁default ▁session ▁ storage , ▁ CookieStore ▖
+▁User ▖ find ( session [: user _ id ])
+▁As ▁explained ▁before , ▁it ▁will ▁also ▁send ▁along ▁the ▁cookie ▁with ▁the ▁valid ▁session ▁id .
+▁NOTE : ▁ _ A part ▁from ▁steal ing ▁a ▁user ' s ▁session ▁id , ▁the ▁attacker ▁may ▁fix ▁a ▁session ▁id ▁known ▁to ▁them ▖
+▁To ▁protect ▁again st ▁this ▁data ▁ le a k age , ▁we ▁di s allow ▁ cross - site ▁`< script >` ▁tags ▖
+▁M any ▁web ▁applications ▁allow ▁users ▁to ▁upload ▁files ▖
+▁* ▁B ob ' s ▁session ▁at ▁ www ▖ web app ▖ com ▁is ▁ still ▁ al ive , ▁because ▁he ▁did n ' t ▁log ▁out ▁a ▁few ▁minutes ▁ ago .
+▁### ▁Re d ir ec tion
+▁This ▁is ▁oppos ed ▁to ▁a ▁blacklist ▁approach ▁which ▁attempt s ▁to ▁remove ▁not ▁allow ed ▁characters ▖
+▁TIP : ▁ _ O ne ▁line ▁of ▁code ▁will ▁protect ▁you ▁from ▁session ▁fix ation .
+▁That ▁is ▁what ▁this ▁guide ▁a im s ▁at .
+▁After ▁reading ▁this ▁guide , ▁you ▁will ▁know :
+▁C ross - Site ▁ Request ▁For ge ry ▁( CSRF )
+▁When ▁saving ▁the ▁ IP ▁address , ▁you ▁have ▁to ▁be ar ▁in ▁mind ▁that ▁there ▁are ▁ Internet ▁ service ▁provide rs ▁or ▁large ▁ org an i z ation s ▁that ▁put ▁their ▁users ▁ behind ▁pro x ies ▖
+▁That ▁means ▁the ▁security ▁of ▁this ▁ storage ▁depend s ▁on ▁this ▁secret ▁( and ▁on ▁the ▁digest ▁algorithm , ▁which ▁defaults ▁to ▁S HA 1, ▁for ▁ compatibility )▖
+▁So , ▁of ▁course , ▁ _ you ▁don ' t ▁want ▁to ▁store ▁any ▁ secrets ▁here _ ▖
+▁M any ▁web ▁applications ▁have ▁an ▁authentication ▁system : ▁a ▁user ▁provides ▁a ▁user ▁name ▁and ▁password , ▁the ▁web ▁application ▁check s ▁them ▁and ▁store s ▁the ▁corresponding ▁user ▁id ▁in ▁the ▁session ▁hash ▖
+▁But ▁this ▁has ▁ha d ▁no ▁security ▁ im p ac t ▁to ▁date .
+▁The ▁under gr ound ▁ price s ▁for ▁ st ol en ▁b an k ▁login ▁account s ▁ range ▁from ▁$ 10 - $ 1 000 ▁( de pending ▁on ▁the ▁available ▁amount ▁of ▁f un d s ), ▁$ 0 ▖ 4 0 - $ 20 ▁for ▁ credit ▁ card ▁number s , ▁$ 1 - $ 8 ▁for ▁online ▁a u c tion ▁site ▁account s ▁and ▁$ 4 - $ 30 ▁for ▁email ▁passwords , ▁according ▁to ▁the ▁[ S ymantec ▁G lo b al ▁ Internet ▁ Security ▁T h re at ▁Re port ]( http :// eval ▖ s ymantec ▖ com / m k t g info / e nterprise / white _ paper s / b - white paper _ in ter net _ security _ threat _ re port _ x i i i _ 04 - 2008 ▖ en - us ▖ p d f ) .
+▁production :
+▁### ▁What ▁are ▁Sessions ?
+▁** U se ▁GET ▁if : **
+▁Ruby ▁on ▁Rails ▁ Security ▁G u ide
+▁If ▁you ▁store ▁file ▁upload s ▁at ▁ / var / www / upload s , ▁and ▁the ▁user ▁enter s ▁a ▁file ▁name ▁like ▁" ▖ ▖ / ▖ ▖ / ▖ ▖ / e t c / pass w d ", ▁it ▁may ▁overwrit e ▁an ▁important ▁file ▖
+▁f ▖ action ▁= ▁' http :// www ▖ example ▖ com / account / destroy ' ;
+▁An y one ▁who ▁ se ize s ▁a ▁cookie ▁from ▁some one ▁else , ▁may ▁use ▁the ▁web ▁application ▁as ▁this ▁user ▁- ▁with ▁ possibl y ▁sever e ▁con sequence s ▖
+▁Web ▁application ▁framework s ▁are ▁made ▁to ▁help ▁developers ▁build ▁web ▁applications ▖
+▁Here ▁is ▁an ▁example ▁for ▁a ▁link ▁which ▁display s ▁ www ▖ harmless ▖ com ▁as ▁d est in ation ▁in ▁the ▁browser ' s ▁status ▁bar ▖
+▁It ▁is ▁common ▁to ▁use ▁ persistent ▁cookies ▁to ▁store ▁user ▁information , ▁with ▁` cookies ▖ permanent ` ▁for ▁example ▖
+▁As ▁a ▁countermeasure , ▁ _ do ▁not ▁allow ▁the ▁user ▁to ▁supply ▁( part s ▁of ) ▁the ▁URL ▁to ▁be ▁ redirected ▁to _ .
+▁* ▁B ob ▁doesn ' t ▁notice ▁the ▁attack ▁- ▁but ▁a ▁few ▁day s ▁later ▁he ▁find s ▁out ▁that ▁project ▁number ▁one ▁is ▁g one .
+▁ --------
+▁Rails ▁uses ▁a ▁hidden ▁` _ method ` ▁field ▁to ▁handle ▁this ▁bar ri er .
+▁This ▁protocol ▁display s ▁its ▁contents ▁directly ▁in ▁the ▁browser ▁and ▁can ▁be ▁anything ▁from ▁HTML ▁or ▁JavaScript ▁to ▁entire ▁images :
+▁* ▁`< img ▁src =" http :// www ▖ web app ▖ com / project /1/ destroy "> `
+▁` data : text / html ; base 64 , P H N j cm l w d D 5 h b G V y d C g n W F N T J y k 8 L 3 N j cm l w d D 4 K `
+▁Sessions
+▁The ▁con tr over s i al ▁point ▁is , ▁that ▁it ▁will ▁also ▁send ▁the ▁cookie , ▁if ▁the ▁request ▁comes ▁from ▁a ▁site ▁of ▁a ▁different ▁domain ▖
+▁ rescue _ from ▁ ActionController :: In valid A u the n tic ity Token ▁do ▁| exception |
+▁Application s ▁get ▁` secrets ▖ secret _ key _ base ` ▁initializ ed ▁to ▁a ▁random ▁key ▁present ▁in ▁` config / secrets ▖ yml `, ▁e ▖ g ▖ :
+▁WARNING : ▁ _ S te al ing ▁a ▁user ' s ▁session ▁id ▁let s ▁an ▁attacker ▁use ▁the ▁web ▁application ▁in ▁the ▁victim ' s ▁name .
+▁* ▁The ▁inter action ▁ _ change s ▁the ▁state _ ▁of ▁the ▁resource ▁in ▁a ▁way ▁that ▁the ▁user ▁would ▁per ce ive ▁( e ▖ g ▖ , ▁a ▁sub script ion ▁to ▁a ▁ service ), ▁or
+▁This ▁is ▁a ▁one - line r ▁in ▁your ▁application ▁controller , ▁and ▁is ▁the ▁default ▁for ▁new ly ▁created ▁rails ▁applications :
+▁var ▁f ▁= ▁document ▖ create E le ment (' form ') ;
+▁* ▁ Cookie s ▁ im p ly ▁a ▁ strict ▁size ▁ limit ▁of ▁4 k B ▖ ▁This ▁is ▁fine ▁as ▁you ▁should ▁not ▁store ▁large ▁amount s ▁of ▁data ▁in ▁a ▁session ▁any way , ▁as ▁describe d ▁before ▖
+▁delete _ all ▁" updated _ at ▁< ▁' # { time ▖ ago ▖ to _ s (: db )} ' ▁OR
+▁ Thin k ▁of ▁a ▁situation ▁where ▁the ▁web ▁application ▁remove s ▁all ▁" ▖ ▖ / " ▁in ▁a ▁file ▁name ▁and ▁an ▁attacker ▁uses ▁a ▁string ▁such ▁as ▁" ▖ ▖▖▖ / / " ▁- ▁the ▁result ▁will ▁be ▁" ▖ ▖ / "▖
+▁Of ▁course , ▁the ▁Ruby ▁interpret er ▁would ▁need ▁the ▁appropriate ▁ permission s ▁to ▁do ▁so ▁- ▁one ▁more ▁reason ▁to ▁run ▁web ▁server s , ▁database ▁server s ▁and ▁other ▁program s ▁as ▁a ▁less ▁privilege d ▁Unix ▁user .
+▁ CookieStore ▁save s ▁the ▁session ▁hash ▁directly ▁in ▁a ▁cookie ▁on ▁the ▁client - side ▖
+▁ Second ly , ▁a ▁security ▁token ▁in ▁non - GET ▁requests ▁will ▁protect ▁your ▁application ▁from ▁CSRF ▖ _
+▁Note ▁that ▁this ▁remove s ▁any ▁value ▁from ▁the ▁session , ▁ _ you ▁have ▁to ▁ tr an s f er ▁them ▁to ▁the ▁new ▁session _ .
+▁A ▁session ▁usually ▁consist s ▁of ▁a ▁hash ▁of ▁values ▁and ▁a ▁session ▁id , ▁usually ▁a ▁ 32 - character ▁string , ▁to ▁identify ▁the ▁hash ▖
+▁* ▁The ▁inter action ▁is ▁more ▁ _ like ▁a ▁question _ ▁( i ▖ e ▖ , ▁it ▁is ▁a ▁ safe ▁operation ▁such ▁as ▁a ▁query , ▁read ▁operation , ▁or ▁look up ) .
+▁* ▁The ▁user ▁is ▁ _ h el d ▁account able ▁for ▁the ▁results _ ▁of ▁the ▁inter action .
+▁It ▁is ▁best ▁to ▁use ▁a ▁ white list ▁approach , ▁which ▁ _ check s ▁for ▁the ▁ validity ▁of ▁a ▁file ▁name ▁with ▁a ▁set ▁of ▁accepted ▁characters _ ▖
+▁If ▁there ▁are ▁files ▁with ▁a ▁certain ▁file ▁name ▁extension , ▁the ▁code ▁in ▁it ▁will ▁be ▁executed ▁when ▁request ed ▁( m ight ▁require ▁some ▁options ▁to ▁be ▁set )▖
+▁CSRF ▁appears ▁very ▁ ra re ly ▁in ▁ CVE ▁( Comm on ▁ V ul ne ra b i li t ies ▁and ▁E x po sure s ) ▁- ▁less ▁than ▁0 ▖ 1 % ▁in ▁ 2006 ▁- ▁but ▁it ▁really ▁is ▁a ▁' s l eep ing ▁g ia nt ' ▁[ G ross man ] ▖
+▁------------
+▁WARNING : ▁ _ S our ce ▁code ▁in ▁upload ed ▁files ▁may ▁be ▁executed ▁when ▁placed ▁in ▁specific ▁directories ▖
+▁### ▁ Session ▁Fix ation
+▁This ▁will ▁automatically ▁include ▁a ▁security ▁token ▁in ▁all ▁forms ▁and ▁Ajax ▁requests ▁generated ▁by ▁Rails ▖
+▁It ▁works ▁like ▁this :
+▁E it her ▁they ▁store ▁the ▁session ▁id ▁in ▁the ▁cookie ▁and ▁have ▁a ▁server - side ▁session ▁hash , ▁or ▁the ▁entire ▁session ▁hash ▁is ▁on ▁the ▁client - side ▖
+▁A ▁second ▁process ▁will ▁handle ▁the ▁process ing ▁of ▁the ▁file ▁in ▁the ▁background .
+▁It ▁then ▁returns ▁a ▁result ▁page ▁which ▁is ▁an ▁un expect ed ▁result ▁for ▁the ▁browser , ▁so ▁it ▁will ▁not ▁display ▁the ▁image .
+▁Here ▁is ▁an ▁example ▁of ▁how ▁to ▁ _ expire ▁sessions ▁in ▁a ▁database ▁table _ ▖
+▁E ve ry ▁cookie ▁sent ▁to ▁the ▁client ' s ▁browser ▁includes ▁the ▁session ▁id ▖
+▁NOTE : ▁ _ Rails ▁provides ▁sever al ▁ storage ▁ mechanism s ▁for ▁the ▁session ▁hashes ▖
+▁ http :// www ▖ example ▖ com / site / legacy ? param 1 = x y & param 2 = 23 & host = www ▖ attacker ▖ com
+▁ _ S to r ing ▁the ▁current ▁user ' s ▁database ▁id ▁in ▁a ▁session ▁is ▁usually ▁ o k _ .
+▁``` ruby
+▁A ▁good ▁place ▁to ▁start ▁look ing ▁at ▁security ▁is ▁with ▁sessions , ▁which ▁can ▁be ▁vulnerable ▁to ▁particular ▁attacks .
+▁# ▁NOTE : ▁File ▖ base name ▁doesn ' t ▁work ▁right ▁with ▁Windows ▁paths ▁on ▁Unix
+▁And ▁the ▁other ▁way ▁ r ound : ▁the ▁browser ▁will ▁send ▁it ▁to ▁the ▁server ▁on ▁every ▁request ▁from ▁the ▁client ▖
+▁sign _ out _ user ▁# ▁ Example ▁method ▁that ▁will ▁destroy ▁the ▁user ▁cookies
+▁In clu d ing ▁a ▁non ce ▁( a ▁random ▁value ) ▁in ▁the ▁session ▁solve s ▁re play ▁attacks ▖
+▁A ▁non ce ▁is ▁valid ▁only ▁once , ▁and ▁the ▁server ▁has ▁to ▁keep ▁ track ▁of ▁all ▁the ▁valid ▁non ce s ▖
+▁* ▁And ▁the ▁most ▁popular ▁injection ▁attack ▁methods .
+▁Re d ir ec tion ▁and ▁File s
+▁Here ▁are ▁some ▁general ▁ guidelines ▁on ▁sessions .
+▁* ▁The ▁user ▁b u y s ▁something .
+▁The ▁main ▁object ive ▁of ▁most ▁attacker s ▁is ▁to ▁make ▁m one y ▖
+▁* ▁The ▁ concept ▁of ▁sessions ▁in ▁Rails , ▁what ▁to ▁put ▁in ▁there ▁and ▁popular ▁attack ▁methods .
+▁f ▖ method ▁= ▁' POST ' ;
+▁If ▁it ▁is ▁at ▁the ▁end ▁of ▁the ▁URL ▁it ▁will ▁hard ly ▁be ▁notice d ▁and ▁redirect s ▁the ▁user ▁to ▁the ▁attacker ▖ com ▁host ▖
+▁However , ▁it ▁can ▁be ▁ exploit ed ▁by ▁attacker ▁if ▁they ▁included ▁a ▁host ▁key ▁in ▁the ▁URL :
+▁It ▁get s ▁even ▁more ▁complicated ▁if ▁you ▁have ▁sever al ▁application ▁server s ▁( mong rel s )▖
+▁ _ File ▁names , ▁which ▁the ▁user ▁may ▁choose ▁( part ly ), ▁should ▁always ▁be ▁filter ed _ ▁as ▁an ▁attacker ▁could ▁use ▁a ▁ malicious ▁file ▁name ▁to ▁overwrit e ▁any ▁file ▁on ▁the ▁server ▖
+▁This ▁is ▁because ▁web ▁applications ▁are ▁relative ly ▁easy ▁to ▁attack , ▁as ▁they ▁are ▁simple ▁to ▁understand ▁and ▁manipulate , ▁even ▁by ▁the ▁ la y ▁person .
+▁C ur r ent ly ▁it ▁is ▁not ▁ fe as ible ▁to ▁br ute - force ▁Rails ' ▁session ▁id s ▖
+▁In ▁Rails ▁you ▁can ▁save ▁and ▁retrieve ▁values ▁using ▁the ▁session ▁method :
+▁This ▁will ▁redirect ▁the ▁user ▁to ▁the ▁main ▁action ▁if ▁they ▁tri ed ▁to ▁access ▁a ▁ legacy ▁action ▖
+▁filename ▖ strip ▖ t a p ▁do ▁| name |
+▁* ▁The ▁attacker ▁creates ▁a ▁valid ▁session ▁id : ▁They ▁load ▁the ▁login ▁page ▁of ▁the ▁web ▁application ▁where ▁they ▁want ▁to ▁fix ▁the ▁session , ▁and ▁take ▁the ▁session ▁id ▁in ▁the ▁cookie ▁from ▁the ▁response ▁( see ▁number ▁1 ▁and ▁2 ▁in ▁the ▁image ) .
+▁It ▁ tries ▁to ▁load ▁the ▁suspect ed ▁image ▁from ▁ www ▖ web app ▖ com ▖
+▁Do ▁not ▁place ▁file ▁upload s ▁in ▁Rails ' ▁ / public ▁directory ▁if ▁it ▁is ▁ Apache ' s ▁ home ▁directory .
+▁The ▁most ▁effective ▁countermeasure ▁is ▁to ▁ _ issue ▁a ▁new ▁session ▁identifie r _ ▁and ▁declare ▁the ▁old ▁one ▁invalid ▁after ▁a ▁successful ▁login ▖
+▁If ▁you ▁have ▁receive d ▁an ▁application ▁where ▁the ▁secret ▁was ▁expose d ▁( e ▖ g ▖ ▁an ▁application ▁who se ▁source ▁was ▁ shared ), ▁ strong ly ▁consider ▁changing ▁the ▁secret .
+▁Here ▁are ▁some ▁ways ▁to ▁ hijack ▁a ▁session , ▁and ▁their ▁countermeasure s :
+▁Here ▁is ▁an ▁example ▁of ▁a ▁ legacy ▁action :
+▁Configur ing ▁Rails ▁Application s ╼ ============== ================ ╼
+▁ From ▁now ▁on , ▁the ▁session ▁is ▁valid ▖
+▁In ▁fact ▁it ▁dynamic ally ▁creates ▁a ▁new ▁form ▁that ▁send s ▁a ▁POST ▁request .
+▁There ▁are ▁many ▁other ▁possibilities , ▁like ▁using ▁a ▁`< script >` ▁tag ▁to ▁make ▁a ▁ cross - site ▁request ▁to ▁a ▁URL ▁with ▁a ▁JSON P ▁or ▁JavaScript ▁response ▖
+▁NOTE : ▁ _ The ▁session ▁id ▁is ▁a ▁ 32 ▁by te ▁long ▁M D 5 ▁hash ▁value .
+▁ Only ▁Ajax ▁requests ▁may ▁have ▁JavaScript ▁response s ▁since ▁ XmlHttpRequest ▁is ▁subject ▁to ▁the ▁browser ▁ Sam e - O ri g in ▁p ol ic y ▁- ▁meaning ▁only ▁your ▁site ▁can ▁in it i ate ▁the ▁request .
+▁A nother ▁redirect ion ▁and ▁self - contain ed ▁XSS ▁attack ▁works ▁in ▁ Firefox ▁and ▁O pe ra ▁by ▁the ▁use ▁of ▁the ▁data ▁protocol ▖
+▁It ▁is ▁important ▁to ▁notice ▁that ▁the ▁actual ▁ craft ed ▁image ▁or ▁link ▁doesn ' t ▁necessar ily ▁have ▁to ▁be ▁ s it u at ed ▁in ▁the ▁web ▁application ' s ▁domain , ▁it ▁can ▁be ▁any where ▁- ▁in ▁a ▁ forum , ▁blog ▁post ▁or ▁email .
+▁If ▁your ▁web ▁application ▁is ▁RESTful , ▁you ▁m ight ▁be ▁used ▁to ▁ additional ▁HTTP ▁verb s , ▁such ▁as ▁PATCH , ▁ PUT ▁or ▁DELETE ▖
+▁Here ▁is ▁how ▁to ▁create ▁a ▁new ▁session ▁in ▁Rails :
+▁O ld er ▁versions ▁of ▁Rails ▁use ▁ CookieStore , ▁which ▁uses ▁` secret _ token ` ▁instead ▁of ▁` secret _ key _ base ` ▁that ▁is ▁used ▁by ▁En crypt ed CookieStore ▖
+▁If ▁you ▁use ▁the ▁popular ▁Re st ful Authentication ▁plugin ▁for ▁user ▁manage ment , ▁add ▁reset _ session ▁to ▁the ▁Sessions Controller # create ▁action ▖
+▁### ▁ Session ▁G u ide lines
+▁class ▁ Session ▁< ▁ActiveRecord :: Base
+▁That ▁way , ▁an ▁attacker ▁cannot ▁use ▁the ▁ fixed ▁session ▁identifie r ▖
+▁The ▁response ▁is ▁execut able ▁code ▁that ▁the ▁attacker ▁can ▁find ▁a ▁way ▁to ▁run , ▁ possibl y ▁ extract ing ▁ sensitive ▁data ▖
+▁Or ▁the ▁attacker ▁place s ▁the ▁code ▁into ▁the ▁on m ous e over ▁even t ▁handle r ▁of ▁an ▁image :
+▁Let ' s ▁start ▁with ▁an ▁example :
+▁reset _ session
+▁secret _ key _ base : ▁a 7 5 d ▖ ▖ .
+▁The ▁ threat s ▁again st ▁web ▁applications ▁include ▁user ▁account ▁hijacking , ▁by pass ▁of ▁access ▁control , ▁reading ▁or ▁modify ing ▁ sensitive ▁data , ▁or ▁present ing ▁f ra u d ul ent ▁content ▖
+▁If ▁the ▁user ▁clear s ▁their ▁cookies ▁or ▁close s ▁the ▁browser , ▁they ▁will ▁be ▁ lo st ▖
+▁A ▁simple ▁solution ▁for ▁this ▁would ▁be ▁to ▁add ▁a ▁created _ at ▁column ▁to ▁the ▁sessions ▁table ▖
+▁In ▁order ▁to ▁develop ▁secure ▁web ▁applications ▁you ▁have ▁to ▁keep ▁up ▁to ▁date ▁on ▁all ▁layer s ▁and ▁know ▁your ▁ en em ies ▖
+▁protect _ from _ forgery ▁with : ▁: exception
+▁If ▁the ▁session ▁for ▁that ▁web ▁application ▁has ▁not ▁time d ▁out , ▁an ▁attacker ▁may ▁execute ▁un authorize d ▁commands .
+▁name ▖ g s ub !
+▁We ▁include ▁the ▁security ▁token ▁in ▁requests ▁and ▁verify ▁it ▁on ▁the ▁server ▖
+▁* ▁ From ▁now ▁on , ▁the ▁victim ▁and ▁the ▁attacker ▁will ▁co - use ▁the ▁web ▁application ▁with ▁the ▁same ▁session : ▁The ▁session ▁be c a me ▁valid ▁and ▁the ▁victim ▁did n ' t ▁notice ▁the ▁attack .
+▁* ▁The ▁inter action ▁is ▁more ▁ _ like ▁an ▁order _ , ▁or
+▁` secrets ▖ secret _ key _ base ` ▁is ▁used ▁for ▁specify ing ▁a ▁key ▁which ▁allows ▁sessions ▁for ▁the ▁application ▁to ▁be ▁verifie d ▁again st ▁a ▁known ▁secure ▁key ▁to ▁prevent ▁t amp er ing ▖
+▁With out ▁the ▁idea ▁of ▁sessions , ▁the ▁user ▁would ▁have ▁to ▁identify , ▁and ▁ probably ▁ authenticate , ▁on ▁every ▁request .
+▁\ - ] / , ▁' _ '
+▁As ▁you ▁may ▁not ▁change ▁a ▁cookie ▁of ▁another ▁domain ▁( because ▁of ▁the ▁same ▁ origin ▁p ol ic y ), ▁the ▁attacker ▁has ▁to ▁run ▁a ▁JavaScript ▁from ▁the ▁domain ▁of ▁the ▁ target ▁web ▁application ▖
+▁Read ▁more ▁about ▁XSS ▁and ▁injection ▁later ▁on .
+▁A ▁session ▁id ▁consist s ▁of ▁the ▁hash ▁value ▁of ▁a ▁random ▁string ▖
+▁ Most ▁of ▁ today ' s ▁web ▁browsers , ▁however ▁do ▁not ▁support ▁them ▁- ▁only ▁GET ▁and ▁POST ▖
+▁# ▁or ▁ period s ▁with ▁ underscore
+▁After ▁reading ▁this ▁guide , ▁you ▁will ▁know :
+▁When ▁filter ing ▁user ▁input ▁file ▁names , ▁ _ d on ' t ▁try ▁to ▁remove ▁ malicious ▁parts _ ▖
+▁Here ▁is ▁how ▁this ▁attack ▁works :
+▁If ▁the ▁security ▁token ▁doesn ' t ▁match ▁what ▁was ▁expected , ▁an ▁exception ▁will ▁be ▁throw n .
+▁The ▁best ▁ _ s ol u tion ▁again st ▁it ▁is ▁not ▁to ▁store ▁this ▁kind ▁of ▁data ▁in ▁a ▁session , ▁but ▁in ▁the ▁database _ ▖
+▁The ▁session ▁id ▁in ▁the ▁cookie ▁identifie s ▁the ▁session .
+▁* ▁ Most ▁people ▁don ' t ▁clear ▁out ▁the ▁cookies ▁after ▁working ▁at ▁a ▁public ▁terminal ▖
+▁The ▁G ar t n er ▁G r o up ▁however ▁ est im ate s ▁that ▁7 5 % ▁of ▁attacks ▁are ▁at ▁the ▁web ▁application ▁layer , ▁and ▁found ▁out ▁" that ▁out ▁of ▁30 0 ▁a udi ted ▁site s , ▁ 9 7 % ▁are ▁vulnerable ▁to ▁attack "▖
+▁The ▁element ▁ references ▁a ▁command ▁in ▁B ob ' s ▁project ▁manage ment ▁application , ▁rather ▁than ▁an ▁image ▁file .
+▁def ▁self ▖ s w eep ( time ▁= ▁1▖ hour )
+▁### ▁File ▁ Upload s
+▁if ▁time ▖ is _ a ?(
+▁WARNING : ▁ _ R ed ir ec tion ▁in ▁a ▁web ▁application ▁is ▁an ▁under est im at ed ▁c rack er ▁tool : ▁ Not ▁only ▁can ▁the ▁attacker ▁forward ▁the ▁user ▁to ▁a ▁t rap ▁web ▁site , ▁they ▁may ▁also ▁create ▁a ▁self - contain ed ▁attack .
+▁``` html
+▁Here ▁is ▁the ▁file ▁name ▁ sanitizer ▁from ▁the ▁[ attachment _ f u ▁plugin ]( https :// github ▖ com / tech now e en i e / attachment _ f u / tree / master ) :
+▁# ▁get ▁only ▁the ▁filename , ▁not ▁the ▁whole ▁path
+▁* ▁Instead ▁of ▁steal ing ▁a ▁cookie ▁ unknown ▁to ▁the ▁attacker , ▁they ▁fix ▁a ▁user ' s ▁session ▁identifie r ▁( in ▁the ▁cookie ) ▁known ▁to ▁them ▖
+▁secret _ key _ base : ▁<%= ▁ ENV [" SE C RE T _ KEY _ BASE "] ▁%>
+▁In ▁order ▁to ▁prevent ▁attacks , ▁ mini m ize ▁their ▁ im p ac t ▁and ▁remove ▁point s ▁of ▁attack , ▁first ▁of ▁all , ▁you ▁have ▁to ▁fully ▁understand ▁the ▁attack ▁methods ▁in ▁order ▁to ▁find ▁the ▁correct ▁countermeasure s ▖
+▁Instead ▁you ▁should ▁store ▁them ▁in ▁the ▁database ▁and ▁save ▁their ▁id ▁in ▁the ▁session ▖
+▁That ▁will ▁great ly ▁increase ▁the ▁ speed ▁of ▁the ▁application , ▁but ▁it ▁is ▁a ▁con tr over s i al ▁ storage ▁option ▁and ▁you ▁have ▁to ▁think ▁about ▁the ▁security ▁implications ▁of ▁it :
+▁It ▁is ▁therefore ▁not ▁necessary ▁for ▁the ▁attacker ▁to ▁steal ▁the ▁session ▁id ▁after ward s ▖
+▁The ▁most ▁important ▁is ▁` ActionDispatch :: Session :: CookieStore ` .
+▁development :
+▁The ▁intention ▁was ▁to ▁pre serv e ▁the ▁URL ▁parameters ▁to ▁the ▁ legacy ▁action ▁and ▁pass ▁them ▁to ▁the ▁main ▁action ▖
+▁A ▁simple ▁countermeasure ▁would ▁be ▁to ▁ _ include ▁only ▁the ▁expected ▁parameters ▁in ▁a ▁ legacy ▁action _ ▁( a g a in ▁a ▁ white list ▁approach , ▁as ▁oppos ed ▁to ▁remov ing ▁un expect ed ▁parameters )▖
+▁This ▁will ▁also ▁be ▁a ▁good ▁idea , ▁if ▁you ▁modify ▁the ▁structure ▁of ▁an ▁object ▁and ▁old ▁versions ▁of ▁it ▁are ▁ still ▁in ▁some ▁user ' s ▁cookies ▖
+▁ _ POST ▁requests ▁can ▁be ▁sent ▁automatically , ▁too _ ▖
+▁Now ▁think ▁of ▁a ▁situation ▁where ▁an ▁attacker ▁upload s ▁a ▁file ▁" file ▖ c g i " ▁with ▁code ▁in ▁it , ▁which ▁will ▁be ▁executed ▁when ▁some one ▁ download s ▁the ▁file .
+▁Ruby ▁on ▁Rails ▁has ▁some ▁c l ever ▁helper ▁methods , ▁for ▁example ▁again st ▁SQL ▁injection , ▁so ▁that ▁this ▁is ▁hard ly ▁a ▁problem ▖ ╼╼
+▁created _ at ▁< ▁' # { 2▖ day s ▖ ago ▖ to _ s (: db )} ' "
+▁On ▁every ▁request ▁the ▁application ▁will ▁load ▁the ▁user , ▁identifie d ▁by ▁the ▁user ▁id ▁in ▁the ▁session , ▁without ▁the ▁need ▁for ▁new ▁authentication ▖
+▁A nother ▁class ▁of ▁security ▁vulnerabilities ▁ s ur r ound s ▁the ▁use ▁of ▁redirect ion ▁and ▁files ▁in ▁web ▁applications .
+▁* ▁M any ▁ cross - site ▁ script ing ▁( XSS ) ▁ exploit s ▁a im ▁at ▁obtain ing ▁the ▁user ' s ▁cookie ▖
+▁In ▁this ▁case ▁store ▁the ▁ credit ▁in ▁the ▁database ▁and ▁the ▁logged _ in _ user _ id ▁in ▁the ▁session .
+▁NOTE : ▁ _ First , ▁as ▁is ▁required ▁by ▁the ▁ W 3 C , ▁use ▁GET ▁and ▁POST ▁appropriate ly ▖
+▁A nother ▁countermeasure ▁is ▁to ▁ _ save ▁user - specific ▁ properties ▁in ▁the ▁session _ , ▁verify ▁them ▁every ▁time ▁a ▁request ▁comes ▁in , ▁and ▁d en y ▁access , ▁if ▁the ▁information ▁does ▁not ▁match ▖
+▁Sessions ▁make ▁it ▁state ful .
+▁* ▁As ▁the ▁new ▁t rap ▁session ▁is ▁un used , ▁the ▁web ▁application ▁will ▁require ▁the ▁user ▁to ▁ authenticate .
+▁### ▁CSRF ▁Co un term ea sure s
+▁ ============== ==============
+▁### ▁ Session ▁E x p ir y
+▁- ---------------- ----------------
+▁session [: user _ id ] ▁= ▁@ current _ user ▖ id
+▁Additional ▁Resource s
+▁This ▁so - called ▁ ph is h ing ▁attack ▁works ▁by ▁sending ▁an ▁un s us p ic i ous ▁link ▁in ▁an ▁email ▁to ▁the ▁users , ▁ inject ing ▁the ▁link ▁by ▁XSS ▁in ▁the ▁web ▁application ▁or ▁ putting ▁the ▁link ▁into ▁an ▁external ▁site ▖
+▁And ▁it ▁depend s ▁on ▁all ▁layer s ▁of ▁a ▁web ▁application ▁environment : ▁The ▁back - end ▁ storage , ▁the ▁web ▁server ▁and ▁the ▁web ▁application ▁itself ▁( and ▁ possibl y ▁other ▁layer s ▁or ▁applications ) .
+▁name ▖ s ub !
